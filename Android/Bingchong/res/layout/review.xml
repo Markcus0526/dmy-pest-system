@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/rlTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/TitleBarSize"
+        android:background="@color/menuColor"
+        android:orientation="horizontal" >
+
+        <ImageButton
+                android:layout_width="70px"
+                android:layout_height="match_parent"
+                android:id="@+id/btn_back" android:background="@null" android:scaleType="centerInside"
+                android:src="@drawable/btn_back" android:padding="15px"/>
+
+       <TextView
+           android:id="@+id/textView1"
+           style="@style/TopText"
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:layout_gravity="center"
+           android:gravity="center"
+           android:text="预警信息审核"
+           android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:orientation="horizontal" android:id="@+id/rlContent" android:layout_below="@+id/rlTitle"
+        android:layout_marginTop="30px">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_margin="10px"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/rvImgPlace"
+                style="@style/MenuBtnSize"
+                android:src="@drawable/req_place" />
+
+            <TextView
+                android:id="@+id/rvTxtPlace"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10px"
+                android:text="非固定测报点"
+                android:textColor="@color/black"
+                android:textSize="@dimen/MenuTextSize"
+                android:typeface="normal" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_margin="10px"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/rvImgBlight"
+                style="@style/MenuBtnSize"
+                android:src="@drawable/req_blight" />
+
+            <TextView
+                android:id="@+id/rvTxtBlight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10px"
+                android:text="新发病虫害"
+                android:textColor="@color/black"
+                android:textSize="@dimen/MenuTextSize"
+                android:typeface="normal" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

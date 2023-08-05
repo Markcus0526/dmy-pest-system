@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layoutBlightInfo"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background1"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10px" >
+
+        <WebView
+            android:id="@+id/wv_info"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/menuTxtColor" />
+
+    </LinearLayout>
+
+</LinearLayout>

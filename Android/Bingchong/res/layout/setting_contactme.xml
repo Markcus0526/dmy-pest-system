@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background1">
+
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/TitleBarSize" android:background="@color/menuColor" android:id="@+id/title_layout">
+        <TextView android:layout_width="match_parent" android:layout_height="match_parent" android:text="关于我们"
+                  android:id="@+id/txt_title" android:textColor="#FFFFFF" android:textSize="@dimen/TitleTextSize"
+                  android:gravity="center"/>
+        <ImageButton android:layout_width="70px" android:layout_height="match_parent" android:id="@+id/btn_back"
+                     android:background="@null" android:scaleType="centerInside" android:src="@drawable/btn_back"
+                     android:padding="15px"/>
+    </RelativeLayout>
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" android:id="@+id/content_layout"
+            android:layout_below="@+id/title_layout">
+        <ImageView android:layout_width="440px" android:layout_height="300px" android:id="@+id/img_logo"
+                   android:src="@drawable/company_mark" android:layout_gravity="center_horizontal"
+                   android:scaleType="centerInside" android:layout_centerHorizontal="true"
+                   android:layout_marginTop="20px"/>
+        <TextView android:id="@+id/text_view" android:layout_width="fill_parent" android:layout_height="wrap_content"
+                  android:text="通辽市绿云信息有限公司" android:textColor="@color/black" android:singleLine="false"
+                  android:textSize="30px" android:layout_marginLeft="20px" android:layout_below="@+id/img_logo"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="地址:通辽市科尔沁区滨河大街鑫达综合楼104"
+                  android:id="@+id/url_view" android:textColor="@color/black" android:layout_marginLeft="20px"
+                  android:layout_below="@+id/text_view" android:textSize="20px" android:layout_marginTop="8px"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:text="电话:0475-8278222" android:id="@+id/phone_view" android:textColor="@color/black"
+                  android:layout_marginLeft="20px" android:layout_below="@+id/url_view" android:textSize="20px"
+                  android:layout_marginTop="8px"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="网址:"
+                  android:id="@+id/lbl_url" android:textColor="@color/black" android:layout_marginLeft="20px"
+                  android:textSize="20px" android:layout_below="@+id/phone_view" android:layout_marginTop="20px"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:text="http://www.gcloudinfo.com" android:id="@+id/tvCompanyLink"
+                  android:textColor="@color/black" android:textStyle="bold" android:textSize="20px"
+                  android:layout_toRightOf="@+id/lbl_url" android:layout_marginLeft="4px"
+                  android:layout_alignTop="@+id/lbl_url"/>
+    </RelativeLayout>
+</RelativeLayout>

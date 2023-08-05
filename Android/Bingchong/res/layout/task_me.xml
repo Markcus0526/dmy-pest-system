@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/rlTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/TitleBarSize"
+        android:background="@color/menuColor"
+        android:orientation="horizontal" >
+
+        <ImageButton
+                android:layout_width="70px"
+                android:layout_height="match_parent"
+                android:id="@+id/btn_back" android:background="@null" android:scaleType="centerInside"
+                android:src="@drawable/btn_back" android:padding="15px"/>
+
+        <TextView
+            android:id="@+id/txtViewSearch"
+            style="@style/TopText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center|right|center_horizontal"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="我的工作"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+        <Spinner android:id="@+id/spinner_type" android:layout_width="150px" android:layout_height="match_parent"
+                 android:background="@color/menuColor"
+                 android:layout_toRightOf="@+id/spinner_level" android:layout_alignParentRight="true"
+                 android:layout_marginRight="10px" android:layout_alignTop="@+id/spinner_level"
+                 android:layout_marginLeft="10px"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="10px"
+        android:orientation="vertical" android:id="@+id/rlContent" android:layout_below="@+id/rlTitle">
+
+        <com.bingchong.widget.LineView
+            android:layout_width="wrap_content"
+            android:layout_height="1px" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/background1" >
+
+            <com.bingchong.widget.LineView
+                android:layout_width="1px"
+                android:layout_height="fill_parent" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="10px"
+                        android:gravity="center"
+                        android:text="常规测报工作日历"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="@color/menuColor"
+                        android:textSize="@dimen/TitleTextSize" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="60px"
+                    android:layout_marginLeft="30px"
+                    android:layout_marginRight="30px"
+                    android:orientation="horizontal" >
+
+                    <Button
+                        android:id="@+id/btn_left"
+                        android:layout_width="70px"
+                        android:layout_height="fill_parent"
+                        android:layout_gravity="center"
+                        android:background="@drawable/day_left" />
+
+                    <TextView
+                        android:id="@+id/txt_day"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_gravity="center"
+                        android:layout_margin="10px"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="2014  6"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="@color/menuColor"
+                        android:textSize="@dimen/TitleTextSize" />
+
+                    <Button
+                        android:id="@+id/btn_right"
+                        android:layout_width="70px"
+                        android:layout_height="fill_parent"
+                        android:layout_gravity="center"
+                        android:background="@drawable/day_right" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <com.bingchong.widget.CalendarView
+                        android:id="@+id/calendar_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <com.bingchong.widget.LineView
+                android:layout_width="1px"
+                android:layout_height="fill_parent" />
+        </LinearLayout>
+
+        <com.bingchong.widget.LineView
+            android:layout_width="wrap_content"
+            android:layout_height="1px" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="100px"
+            android:layout_marginTop="20px" >
+
+            <Button
+                android:id="@+id/btn_task_temp"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="fill_parent"
+                android:layout_height="50px"
+                android:background="@drawable/btn_normal"
+                android:text="临时工作"
+                android:textColor="@color/menuTxtColor"
+                android:textSize="@dimen/NormalTextSize" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

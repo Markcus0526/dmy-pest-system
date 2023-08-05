@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/background1" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="120px"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3px"
+                        android:text="用户名"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="@color/menuColor"
+                        android:textSize="@dimen/NormalTextSize" />
+
+                    <com.bingchong.widget.LineView
+                        android:layout_width="1px"
+                        android:layout_height="fill_parent" />
+
+                    <TextView
+                        android:id="@+id/me_user"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="10px"
+                        android:textColor="@color/menuColor"
+                        android:background="@color/white"
+                        android:textSize="@dimen/NormalTextSize" />
+
+                </LinearLayout>
+
+                <com.bingchong.widget.LineView
+                    android:layout_width="wrap_content"
+                    android:layout_height="1px" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="120px"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3px"
+                        android:text="姓名"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="@color/menuColor"
+                        android:textSize="@dimen/NormalTextSize" />
+
+                    <com.bingchong.widget.LineView
+                        android:layout_width="1px"
+                        android:layout_height="fill_parent" />
+
+                    <TextView
+                        android:id="@+id/me_name"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="10px"
+                        android:textColor="@color/menuColor"
+                        android:textSize="@dimen/NormalTextSize"
+                        android:background="@color/white" />
+                </LinearLayout>
+
+                <com.bingchong.widget.LineView
+                    android:layout_width="wrap_content"
+                    android:layout_height="1px" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="120px"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3px"
+                        android:text="省/自治区"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="@color/menuColor"
+                        android:textSize="@dimen/NormalTextSize" />
+
+                    <com.bingchong.widget.LineView
+                        android:layout_width="1px"
+                        android:layout_height="fill_parent" />
+
+                    <TextView
+                        android:id="@+id/me_sheng"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="10px"
+                        android:textColor="@color/menuColor"
+                        android:textSize="@dimen/NormalTextSize"
+                        android:background="@color/white" />
+                </LinearLayout>
+
+                <com.bingchong.widget.LineView
+                    android:layout_width="wrap_content"
+                    android:layout_height="1px" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="120px"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3px"
+                        android:text="盟/市"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="@color/menuColor"
+                        android:textSize="@dimen/NormalTextSize" />
+
+                    <com.bingchong.widget.LineView
+                        android:layout_width="1px"
+                        android:layout_height="fill_parent" />
+
+                    <TextView
+                        android:id="@+id/me_shi"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="10px"
+                        android:textColor="@color/menuColor"
+                        android:textSize="@dimen/NormalTextSize"
+                        android:background="@color/white"
+                        android:inputType="datetime" />
+                </LinearLayout>
+
+                <com.bingchong.widget.LineView
+                    android:layout_width="wrap_content"
+                    android:layout_height="1px" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="120px"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3px"
+                        android:text="旗/县"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="@color/menuColor"
+                        android:textSize="@dimen/NormalTextSize" />
+
+                    <com.bingchong.widget.LineView
+                        android:layout_width="1px"
+                        android:layout_height="fill_parent" />
+
+                    <TextView
+                        android:id="@+id/me_xian"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="10px"
+                        android:textColor="@color/menuColor"
+                        android:textSize="@dimen/NormalTextSize"
+                        android:background="@color/white" />
+                </LinearLayout>
+
+                <com.bingchong.widget.LineView
+                    android:layout_width="wrap_content"
+                    android:layout_height="1px" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="120px"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3px"
+                        android:text="所在单位"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="@color/menuColor"
+                        android:textSize="@dimen/NormalTextSize" />
+
+                    <com.bingchong.widget.LineView
+                        android:layout_width="1px"
+                        android:layout_height="fill_parent" />
+
+                    <EditText
+                        android:id="@+id/me_place"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+		                android:inputType="textPersonName"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="10px"
+                        android:textColor="@color/menuColor"
+                        android:textSize="@dimen/NormalTextSize"
+                        
+                        android:background="@color/white" />
+                </LinearLayout>
+
+                <com.bingchong.widget.LineView
+                    android:layout_width="wrap_content"
+                    android:layout_height="1px" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="120px"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3px"
+                        android:text="职务/职称"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="@color/menuColor"
+                        android:textSize="@dimen/NormalTextSize" />
+
+                    <com.bingchong.widget.LineView
+                        android:layout_width="1px"
+                        android:layout_height="fill_parent" />
+
+                    <EditText
+                        android:id="@+id/me_job"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10px"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:inputType="textPersonName"
+                        android:textColor="@color/menuColor"
+                        android:textSize="@dimen/NormalTextSize" />
+
+                </LinearLayout>
+
+                <com.bingchong.widget.LineView
+                    android:layout_width="wrap_content"
+                    android:layout_height="1px" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="120px"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3px"
+                        android:text="手机号码"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="@color/menuColor"
+                        android:textSize="@dimen/NormalTextSize" />
+
+                    <com.bingchong.widget.LineView
+                        android:layout_width="1px"
+                        android:layout_height="fill_parent" />
+
+                    <TextView
+                        android:id="@+id/me_phone"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:layout_marginLeft="10px"
+                        android:textColor="@color/menuColor"
+                        android:textSize="@dimen/NormalTextSize"
+                        android:inputType="phone" />
+                </LinearLayout>
+
+                <com.bingchong.widget.LineView
+                    android:layout_width="wrap_content"
+                    android:layout_height="1px" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

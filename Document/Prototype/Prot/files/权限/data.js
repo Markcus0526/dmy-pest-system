@@ -1,0 +1,39 @@
+﻿$axure.loadCurrentPage({
+  "url":"权限.html",
+  "generationDate":new Date(1423878344498.99),
+  "isCanvasEnabled":false,
+  "variables":["OnLoadVariable",
+"level",
+"rl_date",
+"rl_day"],
+  "page":{
+    "packageId":"0f450167fb2f455388205a844a8172a1",
+    "type":"Axure:Page",
+    "name":"权限",
+    "notes":{
+},
+    "style":{
+      "baseStyle":"627587b6038d43cca051c114ac41ad32",
+      "pageAlignment":"near",
+      "fill":{
+        "fillType":"solid",
+        "color":0xFFFFFFFF},
+      "image":null,
+      "imageHorizontalAlignment":"near",
+      "imageVerticalAlignment":"near",
+      "imageRepeat":"auto",
+      "favicon":null,
+      "sketchFactor":"0",
+      "colorStyle":"appliedColor",
+      "fontName":"应用字体",
+      "borderWidth":"0"},
+    "adaptiveStyles":{
+},
+    "interactionMap":{
+},
+    "diagram":{
+      "objects":[]}},
+  "masters":{
+},
+  "objectPaths":{
+}});

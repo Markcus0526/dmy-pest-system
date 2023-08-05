@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:id="@+id/parent_layout"
+                android:background="@color/background">
+
+    <LinearLayout android:id="@+id/rlTitle" android:layout_width="fill_parent" android:layout_height="@dimen/TitleBarSize"
+                  android:background="@color/menuColor" android:orientation="horizontal">
+        <ImageButton
+                android:layout_width="70px"
+                android:layout_height="match_parent"
+                android:id="@+id/btn_back" android:background="@null" android:scaleType="centerInside"
+                android:src="@drawable/btn_back" android:padding="15px"/>
+        <TextView style="@style/TopText" android:id="@+id/textView12" android:layout_width="fill_parent"
+                  android:layout_height="wrap_content" android:layout_gravity="center" android:layout_weight="1"
+                  android:gravity="center" android:text="保存未上报工作"
+                  android:textAppearance="?android:attr/textAppearanceLarge"/>
+    </LinearLayout>
+    <RelativeLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content"
+                  android:id="@+id/rlDate" android:layout_below="@+id/rlTitle" android:layout_marginTop="10px">
+        <CheckBox
+                android:layout_width="60px"
+                android:layout_height="50px"
+                android:id="@+id/check_all" android:layout_gravity="center_vertical" android:layout_marginLeft="20px"
+                android:layout_marginTop="10px"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="50px"
+                  android:layout_gravity="center" android:layout_marginRight="5px" android:padding="3px"
+                  android:text="保存日期" android:textColor="@color/menuColor" android:textSize="@dimen/NormalTextSize"
+                  android:id="@+id/lblDate" android:layout_toRightOf="@+id/check_all"
+                  android:layout_alignTop="@+id/check_all" android:gravity="center"/>
+        <Button style="@style/main_btn" android:layout_width="150px" android:layout_height="60px"
+                android:text="上  报" android:id="@+id/btn_report" android:layout_alignParentBottom="false"
+                android:layout_marginRight="20px"
+                android:textSize="30px" android:layout_alignParentRight="true"
+                />
+        <TextView android:layout_width="wrap_content" android:layout_height="50px"
+                  android:layout_gravity="center" android:layout_marginRight="5px"
+                  android:text="起" android:textColor="@color/menuColor" android:textSize="@dimen/NormalTextSize"
+                  android:id="@+id/lblStartDate" android:layout_below="@+id/lblDate"
+                  android:gravity="center" android:layout_alignLeft="@+id/check_all" android:layout_marginTop="10px"/>
+        <view class="com.bingchong.widget.DateTimePicker" android:layout_width="180px"
+              android:layout_height="50px" android:id="@+id/startdate" android:gravity="center"
+              android:layout_toRightOf="@+id/lblStartDate" android:layout_alignTop="@+id/lblStartDate"
+              android:textSize="@dimen/NormalTextSize"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="50px"
+                  android:layout_gravity="center"
+                  android:text="终" android:textColor="@color/menuColor" android:textSize="@dimen/NormalTextSize"
+                  android:id="@+id/lblEndDate"
+                  android:gravity="center"
+                  android:layout_alignTop="@+id/lblStartDate" android:layout_alignParentRight="true"
+                  android:layout_toLeftOf="@+id/check_all" android:layout_marginRight="205px"/>
+        <view class="com.bingchong.widget.DateTimePicker" android:layout_width="180px"
+              android:layout_height="50px" android:id="@+id/enddate" android:gravity="center"
+              android:layout_alignTop="@+id/lblEndDate"
+              android:layout_alignParentRight="true" android:layout_marginRight="20px"
+              android:textSize="@dimen/NormalTextSize"/>
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:id="@+id/rlContent"
+                  android:layout_below="@+id/rlDate" android:layout_marginLeft="20px" android:layout_marginRight="20px"
+                  android:layout_marginTop="10px" android:layout_marginBottom="10px">
+        <ListView android:id="@+id/list_data" android:layout_width="fill_parent" android:layout_height="fill_parent"
+                  android:divider="@null"/>
+    </RelativeLayout>
+</RelativeLayout>

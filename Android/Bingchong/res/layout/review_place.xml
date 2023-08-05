@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/rlTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/TitleBarSize"
+        android:background="@color/menuColor"
+        android:orientation="horizontal" >
+
+        <ImageButton
+                android:layout_width="70px"
+                android:layout_height="match_parent"
+                android:id="@+id/btn_back" android:background="@null" android:scaleType="centerInside"
+                android:src="@drawable/btn_back" android:padding="15px"/>
+
+        <TextView
+            android:id="@+id/txtView"
+            style="@style/TopText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|right|center_horizontal"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="非固定测报点基本信息审核"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/main_radio_group"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="false"
+        android:layout_marginTop="20px"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" android:layout_below="@+id/rlTitle">
+
+        <com.bingchong.widget.BRadioButton
+            android:id="@+id/btnNoComplete"
+            style="@style/main_tab"
+            android:layout_height="45px"
+            android:checked="true"
+            android:text="待审核" />
+
+        <com.bingchong.widget.BRadioButton
+            android:id="@+id/btnComplete"
+            style="@style/main_tab"
+            android:layout_height="45px"
+            android:text="已审核" />
+
+    </RadioGroup>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1" android:id="@+id/rlContent" android:layout_below="@+id/main_radio_group"
+        android:layout_marginTop="20px">
+		<include layout="@layout/item_list" />
+	</RelativeLayout>
+    
+
+</RelativeLayout>

@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background1"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/rlTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/TitleBarSize"
+        android:background="@color/menuColor"
+        android:orientation="horizontal" >
+
+        <ImageButton
+                android:layout_width="70px"
+                android:layout_height="match_parent"
+                android:id="@+id/btn_back" android:background="@null" android:scaleType="centerInside"
+                android:src="@drawable/btn_back" android:padding="15px"/>
+
+        <TextView
+            android:id="@+id/txtView"
+            style="@style/TopText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|right|center_horizontal"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="新建临时工作"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15px"
+        android:gravity="center"
+        android:orientation="horizontal" android:id="@+id/rlFilter" android:layout_below="@+id/rlTitle">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/TextView04"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15px"
+                android:layout_weight="1"
+                android:text="工作名称:"
+                android:textColor="@color/menuColor"
+                android:textSize="@dimen/NormalTextSize" />
+
+            <TextView
+                android:id="@+id/TextView02"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15px"
+                android:layout_weight="1"
+                android:text="发布日期:"
+                android:textColor="@color/menuColor"
+                android:textSize="@dimen/NormalTextSize" />
+
+            <TextView
+                android:id="@+id/TextView01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15px"
+                android:layout_weight="1"
+                android:text="结束日期:"
+                android:textColor="@color/menuColor"
+                android:textSize="@dimen/NormalTextSize" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15px"
+                android:layout_weight="1"
+                android:text="发布去向:"
+                android:textColor="@color/menuColor"
+                android:textSize="@dimen/NormalTextSize" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/edt_name"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="3px"
+                android:layout_weight="1"
+                android:background="@drawable/item_rect"
+                android:inputType="text"
+                android:paddingLeft="15px"
+                android:textSize="@dimen/NormalTextSize" />
+
+            <com.bingchong.widget.DateTimePicker
+                android:id="@+id/edt_sdate"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="3px"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingLeft="15px"
+                android:textSize="@dimen/NormalTextSize" />
+
+            <com.bingchong.widget.DateTimePicker
+                android:id="@+id/edt_edate"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="3px"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:inputType="date"
+                android:paddingLeft="15px"
+                android:textSize="@dimen/NormalTextSize" />
+
+            <Spinner
+                android:id="@+id/spiner_person"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/btn_dropdown"
+                android:hint="search keyword"
+                android:textSize="@dimen/NormalTextSize" android:gravity="center"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="15px"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical" android:id="@+id/rlContent" android:layout_below="@+id/rlFilter">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/TextView03"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_margin="15px"
+                android:text="任务描述:"
+                android:textColor="@color/menuColor"
+                android:textSize="@dimen/NormalTextSize" />
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/edt_note"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="top"
+            android:layout_margin="3px"
+            android:layout_weight="1"
+            android:ems="10"
+            android:gravity="top|left"
+            android:inputType="textMultiLine"
+            android:textColor="@color/menuColor"
+            android:textSize="@dimen/NormalTextSize" >
+
+            <requestFocus />
+        </EditText>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/btnOk"
+                android:layout_width="150px"
+                android:layout_height="50px"
+                android:layout_gravity="center"
+                android:background="@drawable/btn_normal"
+                android:text="发布"
+                android:textColor="@color/menuTxtColor"
+                android:textSize="@dimen/NormalTextSize" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

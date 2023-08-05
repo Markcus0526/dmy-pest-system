@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="com.bingchong"
+      android:versionCode="20"
+      android:versionName="2.0">
+      
+        <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true" >
+    </supports-screens>
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="16" />
+
+    <uses-feature android:name="android.hardware.camera" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS"/>
+    <uses-permission android:name="android.permission.CONTROL_LOCATION_UPDATES"/>
+    <uses-permission android:name="android.permission.BAIDU_LOCATION_SERVICE" />
+    <uses-permission android:name="android.permission.ACCESS_GPS" />
+
+    <!--Baidu permissions-->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.RESTART_PACKAGES" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <application 
+        android:icon="@drawable/icon" 
+        android:name=".BingChongApp"
+        android:theme="@android:style/Theme.NoTitleBar"
+        android:label="@string/app_name" >
+
+        <service android:name="com.baidu.location.f" android:enabled="true" android:process=":remote"/>
+        <meta-data
+                android:name="com.baidu.lbsapi.API_KEY"
+                android:value="a0ka1ZeZKMR9Tia8MfgQrPL0" />
+
+        <activity
+            android:name=".WelcomeActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>  
+        <activity
+            android:name=".activity.LoginActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+        </activity>        	         
+        <activity
+            android:name=".activity.HomeGetPasswordActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+        </activity>          
+        <activity
+            android:name=".activity.HomeMgrActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+        </activity>        	         
+        <activity
+            android:name=".activity.HomeUserActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+        </activity>        	         
+        <activity
+            android:name=".activity.MovingInfoActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+        </activity>
+        <activity
+                android:name=".activity.MovingInfoUserActivity"
+                android:screenOrientation="portrait"
+                android:windowSoftInputMode="stateHidden">
+        </activity>
+        <activity
+            android:name=".activity.create.CreateBlightActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+        </activity>        	         
+        <activity
+            android:name=".activity.create.CreateInfoActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+        </activity>        	         
+        <activity
+            android:name=".activity.create.CreatePointActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+        </activity>        	         
+        <activity
+            android:name=".activity.db.DataMgrActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>                                 
+        <activity
+            android:name=".activity.db.DBBlightSearchActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+        </activity>                                 
+        <activity
+            android:name=".activity.db.DBBlightInfoActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+        </activity>         <activity
+            android:name=".activity.db.DBPlaceInfoActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+        </activity>                                 
+        <activity
+            android:name=".activity.db.DBPlaceSearchActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+        </activity> 
+        <activity
+            android:name=".activity.db.DBUserPointActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+        </activity>         
+         <activity
+            android:name=".activity.movie.MovieMgrActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+        </activity>  
+         <activity
+            android:name=".activity.movie.MovieUserActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+        </activity>     
+        <activity
+            android:name=".activity.msg.MsgActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+        </activity>
+        <activity
+            android:name=".activity.msg.MsgDetailActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+        </activity>                                                      
+        <activity
+            android:name=".activity.history.HistoryActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+        </activity>                                 
+        <activity
+            android:name=".activity.history.HistoryListActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+        </activity>  
+        <activity
+            android:name=".activity.history.HistoryDetailActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+        </activity>      
+        <activity
+            android:name=".activity.history.HistoryUserActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+        </activity>  
+        <activity
+            android:name=".activity.report.ReportActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+        </activity>
+        <activity
+            android:name=".activity.report.ReportBlightActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+        </activity>
+        <activity
+            android:name=".activity.report.ReportBlightListActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+        </activity>  
+        <activity
+            android:name=".activity.review.ReviewActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+        </activity> 
+        <activity
+            android:name=".activity.review.ReviewPlaceActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+        </activity> 
+        <activity
+            android:name=".activity.review.ReviewBlightActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+        </activity> 
+        <activity
+            android:name=".activity.setting.SettingActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+        </activity>         
+        <activity
+            android:name=".activity.setting.SettingContactActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+        </activity>         
+        <activity
+            android:name=".activity.setting.SettingFunctionActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+        </activity>         
+        <activity
+            android:name=".activity.setting.SettingHelpActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+        </activity>         
+        <activity
+            android:name=".activity.setting.SettingHelpInfoActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+        </activity>         
+        <activity
+            android:name=".activity.setting.SettingOpinionActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+        </activity>         
+        <activity
+            android:name=".activity.setting.SettingOwnerActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>         
+         <activity
+            android:name=".activity.statistics.StatisticsActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+        </activity> 
+         <activity
+            android:name=".activity.statistics.StatisticsPolygonActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+        </activity> 
+         <activity
+            android:name=".activity.statistics.StatisticsGraphActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+        </activity>                         
+         <activity
+            android:name=".activity.task.TaskActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+        </activity>          
+         <activity
+            android:name=".activity.task.TaskFixDetailActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+        </activity>
+         <activity
+            android:name=".activity.task.TaskListActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+        </activity>     
+         <activity
+            android:name=".activity.task.TaskNewActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+        </activity>     
+         <activity
+            android:name=".activity.task.TaskUserActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+        </activity>     
+         
+         <activity
+            android:name=".activity.users.UsersActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+        </activity>  
+         <activity
+            android:name=".activity.users.UserDetailActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+         </activity>
+        <activity android:name=".activity.history.HistoryUserNotCompletedActivity"/>
+        <activity android:name=".activity.history.HistoryUserCompletedActivity"/>
+        <activity android:name=".activity.history.HistoryUserWaitingActivity"/>
+        <activity android:name=".activity.history.HistoryUserSavedActivity"/>
+        <activity android:name=".activity.history.HistoryUserDetailActivity"/>
+        <activity android:name=".activity.msg.MsgPublishActivity"/>
+        <activity android:name=".activity.video.ExpertsListActivity"/>
+        <activity android:name=".activity.video.ExpertsDetailActivity"/>
+        <activity android:name=".activity.video.VideoActivity"/>
+        <activity android:name=".activity.video.VideoMainActivity"/>
+        <activity android:name=".activity.report.ReportInfoActivity"/>
+        <activity
+                android:name=".activity.video.ConfigActivity"
+                android:label="@string/app_name" >
+        </activity>
+        <activity
+                android:name=".activity.video.VideoConfigActivity"
+                android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="com.bairuitech.demo.VideoConfigActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <service android:name="com.bairuitech.bgservice.BackService" >
+            <intent-filter>
+                <action android:name="com.bairuitech.callcenter.backservice" />
+            </intent-filter>
+        </service>
+
+        <service
+             android:enabled="true"
+             android:name="com.baidu.location.f"
+             android:process=":remote"/>
+         <receiver android:name=".backend.MyBroadcastReceiver">
+             <intent-filter>
+                 <action android:name="android.intent.action.BOOT_COMPLETED" />
+             </intent-filter>
+         </receiver>
+
+        <service android:name=".backend.ServiceBaiduMap" />
+
+   </application>
+    
+</manifest>

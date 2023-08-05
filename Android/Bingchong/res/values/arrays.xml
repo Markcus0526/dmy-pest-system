@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="blight_types">
+        <item>全部</item>
+        <item>病害</item>
+        <item>虫害</item>
+    </string-array>
+    
+    <string-array name="blights">
+        <item>病害</item>
+        <item>虫害</item>
+    </string-array>    
+    
+    <string-array name="week_name">
+        <item>日</item>
+        <item>一</item>
+        <item>二</item>
+        <item>三</item>
+        <item>四</item>
+        <item>五</item>
+        <item>六</item>
+    </string-array>    
+ 
+</resources>

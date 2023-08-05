@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="qingshaohou">请稍候...</string>
+	<string name="app_confirm_exit">再按一次退出程序</string>
+	<string name="upgrade_error">升级错误</string>
+	<string name="upgrade_success">升级完成</string>
+</resources>

@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/extratask_detail_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_margin="15px"
+    android:orientation="vertical" >
+
+    <com.bingchong.widget.LineView
+        android:layout_width="fill_parent"
+        android:layout_height="1px" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@color/background1" >
+
+        <com.bingchong.widget.LineView
+            android:layout_width="1px"
+            android:layout_height="fill_parent" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="120px"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3px"
+                        android:text="工作名称"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="@color/menuColor"
+                        android:textSize="@dimen/NormalTextSize" />
+
+                    <com.bingchong.widget.LineView
+                        android:layout_width="1px"
+                        android:layout_height="fill_parent" />
+
+                    <TextView
+                        android:id="@+id/taskTxtName"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10px"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="@color/menuColor"
+                        android:textSize="@dimen/NormalTextSize" />
+                </LinearLayout>
+
+                <com.bingchong.widget.LineView
+                    android:layout_width="wrap_content"
+                    android:layout_height="1px" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="120px"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3px"
+                        android:text="发布时间"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="@color/menuColor"
+                        android:textSize="@dimen/NormalTextSize" />
+
+                    <com.bingchong.widget.LineView
+                        android:layout_width="1px"
+                        android:layout_height="fill_parent" />
+
+                    <TextView
+                        android:id="@+id/taskTxtSDate"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10px"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="@color/menuColor"
+                        android:textSize="@dimen/NormalTextSize" />
+
+                </LinearLayout>
+
+                <com.bingchong.widget.LineView
+                    android:layout_width="wrap_content"
+                    android:layout_height="1px" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="120px"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3px"
+                        android:text="截止时间"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="@color/menuColor"
+                        android:textSize="@dimen/NormalTextSize" />
+
+                    <com.bingchong.widget.LineView
+                        android:layout_width="1px"
+                        android:layout_height="fill_parent" />
+
+                    <TextView
+                        android:id="@+id/taskTxtEDate"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10px"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="@color/menuColor"
+                        android:textSize="@dimen/NormalTextSize" />
+
+                </LinearLayout>
+
+                <com.bingchong.widget.LineView
+                    android:layout_width="wrap_content"
+                    android:layout_height="1px" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="120px"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3px"
+                        android:text="发布去向"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="@color/menuColor"
+                        android:textSize="@dimen/NormalTextSize" />
+
+                    <com.bingchong.widget.LineView
+                        android:layout_width="1px"
+                        android:layout_height="fill_parent" />
+
+                    <TextView
+                        android:id="@+id/taskTxtUser"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10px"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="@color/menuColor"
+                        android:textSize="@dimen/NormalTextSize" />
+
+                </LinearLayout>
+
+                <com.bingchong.widget.LineView
+                    android:layout_width="wrap_content"
+                    android:layout_height="1px" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="120px"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3px"
+                        android:text="接受状态"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="@color/menuColor"
+                        android:textSize="@dimen/NormalTextSize" />
+
+                    <com.bingchong.widget.LineView
+                        android:layout_width="1px"
+                        android:layout_height="fill_parent" />
+
+                    <TextView
+                        android:id="@+id/taskTxtStatus"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10px"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="@color/menuColor"
+                        android:textSize="@dimen/NormalTextSize" />
+
+                </LinearLayout>
+
+                <com.bingchong.widget.LineView
+                    android:layout_width="wrap_content"
+                    android:layout_height="1px" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="120px"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3px"
+                    android:text="工作描述:"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@color/menuColor"
+                    android:textSize="@dimen/NormalTextSize" />
+
+                <TextView
+                    android:id="@+id/taskTxtNote"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10px"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@color/menuColor"
+                    android:textSize="@dimen/NormalTextSize" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <com.bingchong.widget.LineView
+            android:layout_width="1px"
+            android:layout_height="fill_parent" />
+    </LinearLayout>
+
+    <com.bingchong.widget.LineView
+        android:layout_width="fill_parent"
+        android:layout_height="1px" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50px"
+        android:layout_marginTop="15px"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/layoutBtnComplete"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/btnTaskComplete"
+                style="@style/main_btn"
+                android:layout_width="150px"
+                android:layout_height="fill_parent"
+                android:text="已完成"
+                android:textColor="@color/menuTxtColor" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/btnBack"
+                style="@style/main_btn"
+                android:layout_width="150px"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:background="@drawable/btn_normal"
+                android:text="返回"
+                android:textColor="@color/menuTxtColor" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

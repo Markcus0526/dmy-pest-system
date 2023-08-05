@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:background="@color/background"
+                android:id="@+id/parent_layout">
+
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="70px" android:id="@+id/title_layout" android:background="@color/menuColor">
+        <TextView style="@style/TopText" android:id="@+id/txt_title" android:layout_width="fill_parent"
+                  android:layout_height="match_parent" android:layout_gravity="center" android:layout_weight="1"
+                  android:gravity="center" android:text="待审核工作"
+                  android:textAppearance="?android:attr/textAppearanceLarge"/>
+        <ImageButton
+                android:layout_width="70px"
+                android:layout_height="match_parent"
+                android:id="@+id/btn_back" android:background="@null" android:scaleType="centerInside"
+                android:src="@drawable/btn_back" android:padding="15px"/>
+    </RelativeLayout>
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" android:id="@+id/rlDate"
+            android:layout_marginTop="10px"
+            android:layout_below="@+id/title_layout">
+        <TextView android:layout_width="wrap_content" android:layout_height="50px"
+                  android:layout_gravity="center"
+                  android:text="上报日期" android:textColor="@color/menuColor"
+                  android:textSize="@dimen/NormalTextSize" android:id="@+id/lblDate" android:gravity="center"
+                  android:layout_marginLeft="20px" android:layout_marginTop="30px"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="50px" android:layout_gravity="center"
+                  android:text="起"
+                  android:textColor="@color/menuColor" android:textSize="@dimen/NormalTextSize"
+                  android:id="@+id/lblStartDate" android:gravity="center"
+                  android:layout_toRightOf="@+id/lblDate" android:layout_marginLeft="10px"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="50px" android:layout_gravity="center"
+                  android:text="终" android:textColor="@color/menuColor"
+                  android:textSize="@dimen/NormalTextSize" android:id="@+id/lblEndDate" android:gravity="center"
+                  android:layout_toRightOf="@+id/lblDate" android:layout_marginLeft="10px"
+                  android:layout_below="@+id/lblStartDate" android:layout_marginTop="10px"/>
+        <view android:layout_width="280px"
+              android:layout_height="50px"
+              class="com.bingchong.widget.DateTimePicker" android:id="@+id/startdate" android:gravity="center"
+              android:background="#7FB340" android:layout_toRightOf="@+id/lblStartDate" android:layout_marginLeft="20px"
+              android:layout_marginRight="20px" android:layout_alignParentRight="true"
+              android:textSize="@dimen/NormalTextSize"/>
+        <view android:layout_width="280px"
+              android:layout_height="50px"
+              class="com.bingchong.widget.DateTimePicker" android:id="@+id/enddate" android:gravity="center"
+              android:layout_below="@+id/startdate" android:layout_alignLeft="@+id/startdate"
+              android:layout_marginTop="10px" android:layout_alignParentRight="true" android:layout_marginRight="20px"
+              android:textSize="@dimen/NormalTextSize"/>
+    </RelativeLayout>
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:id="@+id/rlContent"
+                  android:layout_marginLeft="20px" android:layout_marginRight="20px"
+                  android:layout_below="@+id/rlDate" android:layout_marginTop="10px" android:layout_marginBottom="10px">
+        <ListView android:id="@+id/list_data" android:layout_width="fill_parent" android:layout_height="fill_parent"
+                  android:divider="@null"/>
+    </LinearLayout>
+</RelativeLayout>

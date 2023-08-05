@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background1"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/rlTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/TitleBarSize"
+        android:background="@color/menuColor"
+        android:orientation="horizontal" >
+
+        <ImageButton
+                android:layout_width="70px"
+                android:layout_height="match_parent"
+                android:id="@+id/btn_back" android:background="@null" android:scaleType="centerInside"
+                android:src="@drawable/btn_back" android:padding="15px"/>
+
+        <TextView
+            android:id="@+id/txtView"
+            style="@style/TopText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|right|center_horizontal"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="柱状图分析"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50px"
+        android:layout_marginLeft="10px"
+        android:layout_marginRight="10px"
+        android:layout_marginTop="15px"
+        android:gravity="center"
+        android:orientation="horizontal" android:id="@+id/rlDate" android:layout_below="@+id/rlTitle">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="15px"
+                android:padding="3px"
+                android:text="日      期"
+                android:textColor="@color/menuColor"
+                android:textSize="@dimen/NormalTextSize" />
+
+            <com.bingchong.widget.DateTimePicker
+                android:id="@+id/edt_sdate"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="1px"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingLeft="15px"
+                android:textSize="@dimen/NormalTextSize" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10px"
+        android:orientation="vertical" android:id="@+id/rlFilter" android:layout_below="@+id/rlDate">
+
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="50px">
+            <Spinner style="@style/Spinner" android:id="@+id/spinner_sheng" android:layout_width="wrap_content"
+                     android:layout_height="fill_parent" android:layout_margin="3px" android:layout_weight="1"/>
+            <Spinner style="@style/Spinner" android:id="@+id/spinner_shi" android:layout_width="wrap_content"
+                     android:layout_height="fill_parent" android:layout_margin="3px" android:layout_weight="1"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50px" >
+
+            <Spinner
+                android:id="@+id/spinner_xian"
+                style="@style/Spinner"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_margin="3px"
+                android:layout_weight="1" />
+
+            <Spinner
+                android:id="@+id/spinner_blight"
+                style="@style/Spinner"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_margin="3px"
+                android:layout_weight="1" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="70px" >
+
+            <Spinner
+                android:id="@+id/spinner_form"
+                style="@style/Spinner"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_margin="3px"
+                android:layout_weight="1" />
+
+            <Spinner
+                android:id="@+id/spinner_field"
+                style="@style/Spinner"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_margin="3px"
+                android:layout_weight="1" />
+            <Button android:layout_width="100px" android:layout_height="match_parent" android:text="搜索"
+                    android:id="@+id/btnSearch" android:textSize="25px" android:layout_margin="3px"
+                    style="@style/main_btn"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_graph"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="10px"
+        android:orientation="vertical" android:layout_below="@+id/rlFilter">
+    </LinearLayout>
+
+</RelativeLayout>

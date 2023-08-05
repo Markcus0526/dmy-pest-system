@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:background="@color/background">
+
+    <LinearLayout android:id="@+id/rlTitle" android:layout_width="fill_parent" android:layout_height="@dimen/TitleBarSize"
+                  android:background="@color/menuColor" android:orientation="horizontal">
+        <ImageButton
+                android:layout_width="70px"
+                android:layout_height="match_parent"
+                android:id="@+id/btn_back" android:background="@null" android:scaleType="centerInside"
+                android:src="@drawable/btn_back" android:padding="15px"/>
+        <TextView style="@style/TopText" android:id="@+id/textView3" android:layout_width="fill_parent"
+                  android:layout_height="wrap_content" android:layout_gravity="center" android:layout_weight="1"
+                  android:gravity="center" android:text="历史工作"
+                  android:textAppearance="?android:attr/textAppearanceLarge"/>
+    </LinearLayout>
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+                  android:baselineAligned="false" android:orientation="horizontal" android:id="@+id/rlContent1"
+                  android:layout_below="@+id/rlContent2">
+        <LinearLayout android:layout_width="120px" android:layout_height="160px" android:layout_margin="10px"
+                      android:layout_weight="1" android:orientation="vertical">
+            <ImageView style="@style/MenuBtnSize" android:id="@+id/imgSaved" android:src="@drawable/home_help"
+                       android:layout_width="100px" android:layout_height="100px"/>
+            <TextView android:id="@+id/lblSaved" android:layout_width="wrap_content"
+                      android:layout_height="wrap_content" android:layout_gravity="center"
+                      android:layout_marginTop="5px" android:text="保存未上报" android:textColor="@color/black"
+                      android:textSize="@dimen/MenuTextSize" android:typeface="normal"/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="120px" android:layout_height="160px" android:layout_margin="10px"
+                      android:layout_weight="1" android:orientation="vertical"/>
+        <LinearLayout android:layout_width="120px" android:layout_height="160px" android:layout_margin="10px"
+                      android:layout_weight="1" android:orientation="vertical"/>
+    </LinearLayout>
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+                  android:layout_marginTop="30px" android:baselineAligned="false" android:orientation="horizontal"
+                  android:id="@+id/rlContent2" android:layout_below="@+id/rlTitle">
+        <LinearLayout android:layout_width="120px" android:layout_height="160px" android:layout_margin="10px"
+                      android:layout_weight="1" android:orientation="vertical">
+            <ImageView style="@style/MenuBtnSize" android:id="@+id/imgNotCompleted" android:src="@drawable/home_work"
+                       android:layout_width="100px" android:layout_height="100px"/>
+            <TextView android:id="@+id/lblNotCompleted" android:layout_width="wrap_content"
+                      android:layout_height="wrap_content" android:layout_gravity="center"
+                      android:layout_marginTop="5px" android:text="未完成工作" android:textColor="@color/black"
+                      android:textSize="@dimen/MenuTextSize" android:typeface="normal"/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="120px" android:layout_height="160px" android:layout_margin="10px"
+                      android:layout_weight="1" android:orientation="vertical">
+            <ImageView style="@style/MenuBtnSize" android:id="@+id/imgCompleted" android:src="@drawable/home_report"
+                       android:layout_width="100px" android:layout_height="100px"/>
+            <TextView android:id="@+id/lblCompleted" android:layout_width="wrap_content"
+                      android:layout_height="wrap_content" android:layout_gravity="center"
+                      android:layout_marginTop="5px" android:text="已完成工作" android:textColor="@color/black"
+                      android:textSize="@dimen/MenuTextSize" android:typeface="normal"/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="120px" android:layout_height="160px" android:layout_margin="10px"
+                      android:layout_weight="1" android:orientation="vertical">
+            <ImageView style="@style/MenuBtnSize" android:id="@+id/imgWaiting" android:src="@drawable/home_history"
+                       android:layout_width="100px" android:layout_height="100px"/>
+            <TextView android:id="@+id/lblWaiting" android:layout_width="wrap_content"
+                      android:layout_height="wrap_content" android:layout_gravity="center"
+                      android:layout_marginTop="5px" android:text="待审核" android:textColor="@color/black"
+                      android:textSize="@dimen/MenuTextSize" android:typeface="normal"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

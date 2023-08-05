@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:id="@+id/parent_layout"
+				android:background="@drawable/round_white_white">
+
+	<RelativeLayout
+			android:layout_width="380px"
+			android:layout_height="wrap_content"
+			android:padding="24px">
+		<RelativeLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content" android:id="@+id/notify_layout">
+			<RelativeLayout
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+				<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:id="@+id/lbl_message"
+						android:gravity="center_vertical|left"
+						android:textColor="#404040" android:textSize="26px" android:layout_centerVertical="true"
+						android:text="message"/>
+			</RelativeLayout>
+		</RelativeLayout>
+		<RelativeLayout
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:id="@+id/button_layout"
+				android:layout_centerHorizontal="true" android:layout_below="@+id/notify_layout"
+				android:layout_marginTop="30px">
+			<Button
+					android:layout_width="130px"
+					android:layout_height="42px"
+					android:text="确定"
+					android:id="@+id/btnOk" android:layout_alignParentLeft="false"
+					android:textColor="#FFFFFF" android:textSize="22px"
+					android:background="@drawable/round_blue_blue"/>
+			<Button
+					android:layout_width="130px"
+					android:layout_height="42px"
+					android:text="取消"
+					android:id="@+id/btnCancel" android:layout_alignParentRight="false"
+					android:textSize="22px" android:textColor="#000000"
+					android:background="@drawable/round_white_gray" android:layout_toRightOf="@+id/btnOk"
+					android:layout_marginLeft="40px"/>
+		</RelativeLayout>
+	</RelativeLayout>
+</RelativeLayout>

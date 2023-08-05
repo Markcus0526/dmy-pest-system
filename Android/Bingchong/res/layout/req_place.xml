@@ -1,0 +1,515 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background1"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10px"
+                android:orientation="vertical" >
+
+                <com.bingchong.widget.LineView
+                    android:layout_width="wrap_content"
+                    android:layout_height="1px" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" >
+
+                    <com.bingchong.widget.LineView
+                        android:layout_width="1px"
+                        android:layout_height="fill_parent" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical" >
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical" >
+
+                                <TextView
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_margin="10px"
+                                    android:gravity="center"
+                                    android:text="新增非固定测报点基本信息表"
+                                    android:textAppearance="?android:attr/textAppearanceLarge"
+                                    android:textColor="@color/menuColor"
+                                    android:textSize="@dimen/NormalTextSize" />
+                            </LinearLayout>
+
+                            <com.bingchong.widget.LineView
+                                android:layout_width="wrap_content"
+                                android:layout_height="1px" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical" >
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal" >
+
+                                <TextView
+                                    android:layout_width="120px"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="3px"
+                                    android:text="东经"
+                                    android:textAppearance="?android:attr/textAppearanceLarge"
+                                    android:textColor="@color/menuColor"
+                                    android:textSize="@dimen/NormalTextSize" />
+
+                                <com.bingchong.widget.LineView
+                                    android:layout_width="1px"
+                                    android:layout_height="fill_parent" />
+
+                                <EditText
+                                    android:id="@+id/EditText12"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_weight="1"
+                                    android:background="@color/white" />
+                            </LinearLayout>
+
+                            <com.bingchong.widget.LineView
+                                android:layout_width="wrap_content"
+                                android:layout_height="1px" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical" >
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal" >
+
+                                <TextView
+                                    android:layout_width="120px"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="3px"
+                                    android:text="北纬"
+                                    android:textAppearance="?android:attr/textAppearanceLarge"
+                                    android:textColor="@color/menuColor"
+                                    android:textSize="@dimen/NormalTextSize" />
+
+                                <com.bingchong.widget.LineView
+                                    android:layout_width="1px"
+                                    android:layout_height="fill_parent" />
+
+                                <Spinner
+                                    android:id="@+id/Spinner01"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="fill_parent"
+                                    android:layout_weight="1"
+                                    android:background="@color/white" />
+                            </LinearLayout>
+
+                            <com.bingchong.widget.LineView
+                                android:layout_width="wrap_content"
+                                android:layout_height="1px" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical" >
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal" >
+
+                                <TextView
+                                    android:layout_width="120px"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="3px"
+                                    android:text="名称"
+                                    android:textAppearance="?android:attr/textAppearanceLarge"
+                                    android:textColor="@color/menuColor"
+                                    android:textSize="@dimen/NormalTextSize" />
+
+                                <com.bingchong.widget.LineView
+                                    android:layout_width="1px"
+                                    android:layout_height="fill_parent" />
+
+                                <EditText
+                                    android:id="@+id/EditText13"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_weight="1"
+                                    android:background="@color/white"
+                                    android:inputType="datetime" />
+                            </LinearLayout>
+
+                            <com.bingchong.widget.LineView
+                                android:layout_width="wrap_content"
+                                android:layout_height="1px" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical" >
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal" >
+
+                                <TextView
+                                    android:layout_width="120px"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="3px"
+                                    android:text="乡镇"
+                                    android:textAppearance="?android:attr/textAppearanceLarge"
+                                    android:textColor="@color/menuColor"
+                                    android:textSize="@dimen/NormalTextSize" />
+
+                                <com.bingchong.widget.LineView
+                                    android:layout_width="1px"
+                                    android:layout_height="fill_parent" />
+
+                                <EditText
+                                    android:id="@+id/EditText14"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_weight="1"
+                                    android:background="@color/white" />
+                            </LinearLayout>
+
+                            <com.bingchong.widget.LineView
+                                android:layout_width="wrap_content"
+                                android:layout_height="1px" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical" >
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal" >
+
+                                <TextView
+                                    android:layout_width="120px"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="3px"
+                                    android:text="村组"
+                                    android:textAppearance="?android:attr/textAppearanceLarge"
+                                    android:textColor="@color/menuColor"
+                                    android:textSize="@dimen/NormalTextSize" />
+
+                                <com.bingchong.widget.LineView
+                                    android:layout_width="1px"
+                                    android:layout_height="fill_parent" />
+
+                                <EditText
+                                    android:id="@+id/EditText15"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_weight="1"
+                                    android:background="@color/white" />
+                            </LinearLayout>
+
+                            <com.bingchong.widget.LineView
+                                android:layout_width="wrap_content"
+                                android:layout_height="1px" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical" >
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal" >
+
+                                <TextView
+                                    android:layout_width="120px"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="3px"
+                                    android:text="田块面积"
+                                    android:textAppearance="?android:attr/textAppearanceLarge"
+                                    android:textColor="@color/menuColor"
+                                    android:textSize="@dimen/NormalTextSize" />
+
+                                <com.bingchong.widget.LineView
+                                    android:layout_width="1px"
+                                    android:layout_height="fill_parent" />
+
+                                <EditText
+                                    android:id="@+id/EditText16"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_weight="1"
+                                    android:background="@color/white" />
+                            </LinearLayout>
+
+                            <com.bingchong.widget.LineView
+                                android:layout_width="wrap_content"
+                                android:layout_height="1px" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical" >
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal" >
+
+                                <TextView
+                                    android:layout_width="120px"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="3px"
+                                    android:text="代表面积"
+                                    android:textAppearance="?android:attr/textAppearanceLarge"
+                                    android:textColor="@color/menuColor"
+                                    android:textSize="@dimen/NormalTextSize" />
+
+                                <com.bingchong.widget.LineView
+                                    android:layout_width="1px"
+                                    android:layout_height="fill_parent" />
+
+                                <EditText
+                                    android:id="@+id/EditText17"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_weight="1"
+                                    android:background="@color/white"
+                                    android:inputType="phone" />
+                            </LinearLayout>
+
+                            <com.bingchong.widget.LineView
+                                android:layout_width="wrap_content"
+                                android:layout_height="1px" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical" >
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal" >
+
+                                <TextView
+                                    android:layout_width="120px"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="3px"
+                                    android:text="种植作物"
+                                    android:textAppearance="?android:attr/textAppearanceLarge"
+                                    android:textColor="@color/menuColor"
+                                    android:textSize="@dimen/NormalTextSize" />
+
+                                <com.bingchong.widget.LineView
+                                    android:layout_width="1px"
+                                    android:layout_height="fill_parent" />
+
+                                <EditText
+                                    android:id="@+id/EditText10"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_weight="1"
+                                    android:background="@color/white"
+                                    android:inputType="phone" />
+                            </LinearLayout>
+
+                            <com.bingchong.widget.LineView
+                                android:layout_width="wrap_content"
+                                android:layout_height="1px" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical" >
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal" >
+
+                                <TextView
+                                    android:layout_width="120px"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="3px"
+                                    android:text="气候类型"
+                                    android:textAppearance="?android:attr/textAppearanceLarge"
+                                    android:textColor="@color/menuColor"
+                                    android:textSize="@dimen/NormalTextSize" />
+
+                                <com.bingchong.widget.LineView
+                                    android:layout_width="1px"
+                                    android:layout_height="fill_parent" />
+
+                                <EditText
+                                    android:id="@+id/EditText11"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_weight="1"
+                                    android:background="@color/white"
+                                    android:inputType="phone" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <com.bingchong.widget.LineView
+                        android:layout_width="1px"
+                        android:layout_height="fill_parent" />
+                </LinearLayout>
+
+                <com.bingchong.widget.LineView
+                    android:layout_width="wrap_content"
+                    android:layout_height="1px" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10px"
+                android:orientation="vertical" >
+
+                <com.bingchong.widget.LineView
+                    android:layout_width="wrap_content"
+                    android:layout_height="1px" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" >
+
+                    <com.bingchong.widget.LineView
+                        android:layout_width="1px"
+                        android:layout_height="fill_parent" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/TextView01"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10px"
+                            android:text="备注信息："
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:textColor="@color/menuColor"
+                            android:textSize="@dimen/NormalTextSize" />
+
+                        <EditText
+                            android:id="@+id/EditText02"
+                            android:layout_width="fill_parent"
+                            android:layout_height="150px"
+                            android:background="@color/white"
+                            android:ems="10"
+                            android:gravity="top|left"
+                            android:text="aaa"
+                            android:textColor="@color/menuColor"
+                            android:textSize="@dimen/NormalTextSize" />
+                    </LinearLayout>
+
+                    <com.bingchong.widget.LineView
+                        android:layout_width="1px"
+                        android:layout_height="fill_parent" />
+                </LinearLayout>
+
+                <com.bingchong.widget.LineView
+                    android:layout_width="wrap_content"
+                    android:layout_height="1px" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="150px"
+                android:layout_margin="10px"
+                android:background="@drawable/item_rect" >
+
+                <ImageView
+                    android:id="@+id/btnPhoto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10px"
+                    android:layout_marginTop="10px"
+                    android:src="@drawable/photo" />
+
+                <ImageView
+                    android:id="@+id/imagePhoto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/assign_rect" />
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50px"
+        android:layout_margin="10px"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/btn_req"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="fill_parent"
+            android:layout_height="50px"
+            android:background="@drawable/btn_normal"
+            android:text="提交审核"
+            android:textColor="@color/menuTxtColor"
+            android:textSize="@dimen/NormalTextSize" />
+
+    </LinearLayout>
+
+</LinearLayout>

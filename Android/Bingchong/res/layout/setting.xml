@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent">
+
+	<RelativeLayout
+			android:layout_width="fill_parent"
+			android:layout_height="@dimen/TitleBarSize" android:id="@+id/title_layout" android:background="@color/menuColor">
+		<TextView
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:text="设置"
+				android:id="@+id/txt_title" android:textColor="#FFFFFF" android:textSize="@dimen/TitleTextSize"
+				android:gravity="center"/>
+		<ImageButton
+				android:layout_width="70px"
+				android:layout_height="match_parent"
+				android:id="@+id/btn_back" android:background="@null" android:scaleType="centerInside"
+				android:src="@drawable/btn_back" android:padding="15px"/>
+	</RelativeLayout>
+	<RelativeLayout
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent" android:id="@+id/content_layout"
+			android:layout_below="@+id/title_layout" android:background="@color/background">
+		<LinearLayout
+				android:orientation="vertical"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:layout_marginLeft="20px" android:layout_marginRight="20px"
+				android:layout_marginTop="30px" android:padding="2px" android:background="@color/menuColor"
+				android:id="@+id/group_layout1">
+			<RelativeLayout
+					android:layout_width="fill_parent"
+					android:layout_height="70px" android:id="@+id/wodexinxi_layout"
+					android:background="@color/background">
+				<TextView
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:text="我的信息"
+						android:id="@+id/txt_wodexinxi" android:gravity="left|center_vertical"
+						android:textColor="@color/menuColor" android:textSize="24px" android:paddingLeft="20px"/>
+				<ImageView
+						android:layout_width="70px"
+						android:layout_height="match_parent"
+						android:id="@+id/img_wodexinxi" android:layout_alignParentRight="true"
+						android:background="@null" android:scaleType="centerInside"
+						android:src="@drawable/right_arrow" android:padding="20px"/>
+				<ImageButton
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:id="@+id/btnAboutMe" android:background="@drawable/btn_empty"/>
+			</RelativeLayout>
+			<RelativeLayout
+					android:layout_width="fill_parent"
+					android:layout_height="70px" android:id="@+id/guanyuwomen_layout" android:layout_marginTop="2px"
+					android:background="@color/background">
+				<TextView
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:text="关于我们"
+						android:id="@+id/txt_guanyuwomen" android:gravity="left|center_vertical"
+						android:textColor="@color/menuColor" android:textSize="24px" android:paddingLeft="20px"/>
+				<ImageView
+						android:layout_width="70px"
+						android:layout_height="match_parent"
+						android:id="@+id/img_guanyuwomen" android:layout_alignParentRight="true"
+						android:background="@null" android:scaleType="centerInside"
+						android:src="@drawable/right_arrow" android:padding="20px"/>
+				<ImageButton
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:id="@+id/btnContactUs" android:background="@drawable/btn_empty"/>
+			</RelativeLayout>
+		</LinearLayout>
+		<LinearLayout
+				android:orientation="vertical"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:layout_marginTop="50px" android:id="@+id/group_layout2"
+				android:layout_below="@+id/group_layout1" android:layout_alignLeft="@+id/group_layout1"
+				android:layout_alignRight="@+id/group_layout1" android:padding="2px"
+				android:background="@color/menuColor">
+			<RelativeLayout
+					android:layout_width="fill_parent"
+					android:layout_height="70px" android:id="@+id/gongnengjieshao_layout"
+					android:background="@color/background">
+				<TextView
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:text="功能介绍"
+						android:id="@+id/txt_gongnengjieshao" android:gravity="left|center_vertical"
+						android:textColor="@color/menuColor" android:textSize="24px" android:paddingLeft="20px"/>
+				<ImageView
+						android:layout_width="70px"
+						android:layout_height="match_parent"
+						android:id="@+id/img_gongnengjieshao" android:layout_alignParentRight="true"
+						android:background="@null" android:scaleType="centerInside"
+						android:src="@drawable/right_arrow" android:padding="20px"/>
+				<ImageButton
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:id="@+id/btnFunction" android:background="@drawable/btn_empty"/>
+			</RelativeLayout>
+			<RelativeLayout
+					android:layout_width="fill_parent"
+					android:layout_height="70px" android:id="@+id/yijianfankui_layout"
+					android:layout_marginTop="2px" android:background="@color/background">
+				<TextView
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:text="意见反馈"
+						android:id="@+id/txt_yijianfankui" android:gravity="left|center_vertical"
+						android:textColor="@color/menuColor" android:textSize="24px" android:paddingLeft="20px"/>
+				<ImageView
+						android:layout_width="70px"
+						android:layout_height="match_parent"
+						android:id="@+id/img_yijianfankui" android:layout_alignParentRight="true"
+						android:background="@null" android:scaleType="centerInside"
+						android:src="@drawable/right_arrow" android:padding="20px"/>
+				<ImageButton
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:id="@+id/btnOpinion" android:background="@drawable/btn_empty"/>
+			</RelativeLayout>
+			<RelativeLayout
+					android:layout_width="fill_parent"
+					android:layout_height="70px" android:id="@+id/bangzhuxinxi_layout"
+					android:layout_marginTop="2px" android:background="@color/background">
+				<TextView
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:text="帮助信息"
+						android:id="@+id/txt_bangzhuxinxi" android:gravity="left|center_vertical"
+						android:textColor="@color/menuColor" android:textSize="24px" android:paddingLeft="20px"/>
+				<ImageView
+						android:layout_width="70px"
+						android:layout_height="match_parent"
+						android:id="@+id/img_bangzhuxinxi" android:layout_alignParentRight="true"
+						android:background="@null" android:scaleType="centerInside"
+						android:src="@drawable/right_arrow" android:padding="20px"/>
+				<ImageButton
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:id="@+id/btnHelp" android:background="@drawable/btn_empty"
+						android:focusableInTouchMode="false"/>
+			</RelativeLayout>
+		</LinearLayout>
+	</RelativeLayout>
+</RelativeLayout>

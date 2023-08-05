@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:id="@+id/toast_parent_layout"
+				android:background="@drawable/round_dimblack_black_layout" android:paddingLeft="15px"
+				android:paddingRight="15px" android:paddingTop="10px" android:paddingBottom="10px">
+
+	<ImageView
+			android:layout_width="50px"
+			android:layout_height="46px"
+			android:id="@+id/img_mark"
+			android:scaleType="centerInside"
+			android:src="@drawable/bk_exclamation_white" android:layout_centerVertical="true"/>
+	<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:id="@+id/txt_message"
+			android:textSize="24px" android:textColor="#FFFFFFFF"
+			android:layout_toRightOf="@+id/img_mark" android:layout_centerVertical="true"
+			android:paddingLeft="10px" android:gravity="left" android:text="提示文本"/>
+</RelativeLayout>

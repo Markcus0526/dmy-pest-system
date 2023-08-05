@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="50px"
+    android:layout_height="50px"
+    android:orientation="vertical" 
+    android:id="@+id/pop_view"
+    android:gravity="center_horizontal"
+    >
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <ImageView android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:layout_marginBottom="10px"
+                   android:src="@drawable/place_uncompleted_mark"/>
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30px"
+                android:text="2"
+                android:id="@+id/txtCount" android:gravity="center" android:textColor="#ffff0000"
+                android:textSize="20px"/>
+    </RelativeLayout>
+</LinearLayout>

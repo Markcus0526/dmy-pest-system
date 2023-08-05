@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:id="@+id/parent_layout"
+                android:background="@color/background">
+
+    <LinearLayout android:id="@+id/rlTitle" android:layout_width="fill_parent" android:layout_height="70px"
+                  android:background="@color/menuColor" android:orientation="horizontal">
+        <ImageButton
+                android:layout_width="70px"
+                android:layout_height="match_parent"
+                android:id="@+id/btn_back" android:background="@null" android:scaleType="centerInside"
+                android:src="@drawable/btn_back" android:padding="15px"/>
+        <TextView style="@style/TopText" android:id="@+id/textView18" android:layout_width="wrap_content"
+                  android:layout_height="wrap_content" android:layout_gravity="center|right|center_horizontal"
+                  android:layout_weight="1" android:gravity="center" android:text="发布通知"
+                  android:textAppearance="?android:attr/textAppearanceLarge"/>
+    </LinearLayout>
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" android:id="@+id/rlContent" android:layout_below="@+id/rlTitle">
+        <TextView
+                android:layout_width="100px"
+                android:layout_height="50px"
+                android:text="标  题:"
+                android:id="@+id/lblTitle" android:layout_alignParentTop="false" android:layout_alignParentLeft="false"
+                android:layout_marginLeft="20px" android:layout_marginTop="20px" android:textSize="20px"
+                android:gravity="center_vertical"/>
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50px"
+                android:id="@+id/txtTitle" android:layout_alignTop="@+id/lblTitle"
+                android:layout_toRightOf="@+id/lblTitle" android:layout_marginLeft="10px"
+                android:layout_marginRight="20px" android:textSize="25px"
+                android:paddingLeft="10px" android:paddingTop="0px" android:paddingBottom="5px" android:hint="请输入标题"/>
+        <TextView android:layout_width="100px" android:layout_height="50px" android:text="文  号:"
+                  android:id="@+id/lblSerial" android:layout_alignParentTop="false" android:layout_alignParentLeft="false"
+                  android:layout_marginTop="5px" android:textSize="20px"
+                  android:gravity="center_vertical" android:layout_below="@+id/lblTitle"
+                  android:layout_alignLeft="@+id/lblTitle"/>
+        <EditText android:layout_width="match_parent" android:layout_height="50px" android:id="@+id/txtSerial"
+                  android:layout_alignTop="@+id/lblSerial" android:layout_toRightOf="@+id/lblSerial"
+                  android:layout_marginLeft="10px" android:layout_marginRight="20px" android:textSize="25px"
+                  android:paddingLeft="10px" android:paddingTop="0px" android:paddingBottom="5px" android:hint="请输入文号"/>
+        <TextView android:layout_width="100px" android:layout_height="50px" android:text="发布者:"
+                  android:id="@+id/lblPublisher" android:layout_alignParentTop="false"
+                  android:layout_alignParentLeft="false" android:layout_marginTop="5px" android:textSize="20px"
+                  android:gravity="center_vertical" android:layout_below="@+id/lblSerial"
+                  android:layout_alignLeft="@+id/lblTitle"/>
+        <EditText android:layout_width="match_parent" android:layout_height="50px" android:id="@+id/txtPublisher"
+                  android:layout_alignTop="@+id/lblPublisher" android:layout_toRightOf="@+id/lblPublisher"
+                  android:layout_marginLeft="10px" android:layout_marginRight="20px" android:textSize="25px"
+                  android:paddingLeft="10px" android:paddingTop="0px" android:paddingBottom="5px"
+                  android:enabled="false"/>
+        <TextView android:layout_width="100px" android:layout_height="50px" android:text="发布日期:"
+                  android:id="@+id/lblDate" android:layout_alignParentTop="false"
+                  android:layout_alignParentLeft="false" android:layout_marginTop="5px" android:textSize="20px"
+                  android:gravity="center_vertical" android:layout_below="@+id/lblPublisher"
+                  android:layout_alignLeft="@+id/lblTitle"/>
+        <EditText android:layout_width="match_parent" android:layout_height="50px" android:id="@+id/txtDate"
+                  android:layout_alignTop="@+id/lblDate" android:layout_toRightOf="@+id/lblPublisher"
+                  android:layout_marginLeft="10px" android:layout_marginRight="20px" android:textSize="25px"
+                  android:paddingLeft="10px" android:paddingTop="0px" android:paddingBottom="5px"
+                  android:enabled="false"/>
+        <TextView android:layout_width="100px" android:layout_height="50px" android:text="发布内容:"
+                  android:id="@+id/lblContent" android:layout_alignParentTop="false" android:layout_alignParentLeft="false"
+                  android:layout_marginTop="5px" android:textSize="20px" android:gravity="center_vertical"
+                  android:layout_below="@+id/lblDate" android:layout_alignLeft="@+id/lblTitle"/>
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/txtContent" android:layout_below="@+id/lblContent"
+                android:layout_alignLeft="@+id/lblContent" android:layout_marginRight="20px"
+                android:layout_marginBottom="10px" android:textSize="25px" android:layout_above="@+id/btn_publish"
+                android:gravity="top" android:hint="请输入通知内容"/>
+        <Button
+                android:layout_width="match_parent"
+                android:layout_height="60px"
+                android:text="发   布"
+                android:id="@+id/btn_publish" android:layout_alignParentBottom="true" android:layout_marginLeft="20px"
+                android:layout_marginRight="20px" android:layout_marginBottom="10px" android:textSize="30px"
+                style="@style/main_btn"/>
+    </RelativeLayout>
+</RelativeLayout>

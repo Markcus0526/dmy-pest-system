@@ -1,0 +1,691 @@
+﻿$axure.loadCurrentPage({
+  "url":"统计分析.html",
+  "generationDate":new Date(1423878332563.63),
+  "isCanvasEnabled":false,
+  "variables":["OnLoadVariable",
+"level",
+"rl_date",
+"rl_day"],
+  "page":{
+    "packageId":"33ba8e8ac1de497dae4dd7529aabc54a",
+    "type":"Axure:Page",
+    "name":"统计分析",
+    "notes":{
+},
+    "style":{
+      "baseStyle":"627587b6038d43cca051c114ac41ad32",
+      "pageAlignment":"near",
+      "fill":{
+        "fillType":"solid",
+        "color":0xFFFFFFFF},
+      "image":null,
+      "imageHorizontalAlignment":"near",
+      "imageVerticalAlignment":"near",
+      "imageRepeat":"auto",
+      "favicon":null,
+      "sketchFactor":"0",
+      "colorStyle":"appliedColor",
+      "fontName":"应用字体",
+      "borderWidth":"0"},
+    "adaptiveStyles":{
+},
+    "interactionMap":{
+},
+    "diagram":{
+      "objects":[{
+          "id":"e5a70b3b77624d76b19c552ceb0e8b74",
+          "label":"",
+          "type":"imageBox",
+          "styleType":"imageBox",
+          "visible":true,
+          "style":{
+            "fontName":"'应用字体 Regular', '应用字体'",
+            "location":{
+              "x":182,
+              "y":80},
+            "size":{
+              "width":22,
+              "height":19},
+            "borderWidth":"-1"},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"28fe9b45c0e248fdafcc51730534ae32",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "fontName":"'应用字体 Regular', '应用字体'",
+                "location":{
+                  "x":182,
+                  "y":80},
+                "size":{
+                  "width":22,
+                  "height":19},
+                "borderWidth":"-1"},
+              "adaptiveStyles":{
+}}],
+          "interactionMap":{
+            "onClick":{
+              "description":"OnClick",
+              "cases":[{
+                  "description":"用例 1",
+                  "isNewIfGroup":false,
+                  "actions":[{
+                      "action":"fadeWidget",
+                      "description":"Toggle 日历 fade 500 ms",
+                      "objectsToFades":[{
+                          "objectPath":["41c0a2692c234e02aa2e52c1de41ac48"],
+                          "fadeInfo":{
+                            "fadeType":"toggle",
+                            "options":{
+                              "easing":"fade",
+                              "duration":500,
+                              "showType":"none"}}}]}]}]}},
+          "tabbable":true,
+          "images":{
+            "normal~":"images/上报数据管理/u740.png"}},
+{
+          "id":"41c0a2692c234e02aa2e52c1de41ac48",
+          "label":"日历",
+          "type":"dynamicPanel",
+          "styleType":"dynamicPanel",
+          "visible":false,
+          "style":{
+            "location":{
+              "x":130,
+              "y":103},
+            "size":{
+              "width":208,
+              "height":219},
+            "visible":false},
+          "adaptiveStyles":{
+},
+          "scrollbars":"none",
+          "fitToContent":false,
+          "propagate":false,
+          "diagrams":[{
+              "id":"3fb536a4a9eb4e6c8aa29036ebf0f499",
+              "label":"状态1",
+              "type":"Axure:PanelDiagram",
+              "objects":[{
+                  "id":"506b34ff370e4de297e53925742775ca",
+                  "label":"",
+                  "parentDynamicPanel":"41c0a2692c234e02aa2e52c1de41ac48",
+                  "type":"buttonShape",
+                  "styleType":"buttonShape",
+                  "visible":true,
+                  "style":{
+                    "fontName":"'应用字体 Regular', '应用字体'",
+                    "location":{
+                      "x":1,
+                      "y":1},
+                    "size":{
+                      "width":206,
+                      "height":217},
+                    "borderWidth":"2",
+                    "borderFill":{
+                      "fillType":"solid",
+                      "color":0xFFC9C9C9}},
+                  "adaptiveStyles":{
+},
+                  "objects":[{
+                      "id":"8b40edecad4c452fa56fb3a5d8f26b2e",
+                      "label":"",
+                      "isContained":true,
+                      "parentDynamicPanel":"41c0a2692c234e02aa2e52c1de41ac48",
+                      "type":"richTextPanel",
+                      "styleType":"paragraph",
+                      "visible":true,
+                      "style":{
+                        "fontName":"'应用字体 Regular', '应用字体'",
+                        "location":{
+                          "x":1,
+                          "y":1},
+                        "size":{
+                          "width":206,
+                          "height":217},
+                        "borderWidth":"2",
+                        "borderFill":{
+                          "fillType":"solid",
+                          "color":0xFFC9C9C9}},
+                      "adaptiveStyles":{
+}}],
+                  "images":{
+                    "normal~":"images/上报数据管理/u743.png"}},
+{
+                  "id":"d69ee61ef7bb42f7ab52ebe8ca63f786",
+                  "label":"",
+                  "parentDynamicPanel":"41c0a2692c234e02aa2e52c1de41ac48",
+                  "type":"imageBox",
+                  "styleType":"imageBox",
+                  "visible":true,
+                  "style":{
+                    "fontName":"'应用字体 Regular', '应用字体'",
+                    "location":{
+                      "x":4,
+                      "y":9},
+                    "size":{
+                      "width":200,
+                      "height":203},
+                    "borderWidth":"-1"},
+                  "adaptiveStyles":{
+},
+                  "objects":[{
+                      "id":"ef164cc1131641d0bf92c7fda5bc7963",
+                      "label":"",
+                      "isContained":true,
+                      "parentDynamicPanel":"41c0a2692c234e02aa2e52c1de41ac48",
+                      "type":"richTextPanel",
+                      "styleType":"paragraph",
+                      "visible":true,
+                      "style":{
+                        "fontName":"'应用字体 Regular', '应用字体'",
+                        "location":{
+                          "x":4,
+                          "y":9},
+                        "size":{
+                          "width":200,
+                          "height":203},
+                        "borderWidth":"-1"},
+                      "adaptiveStyles":{
+}}],
+                  "images":{
+                    "normal~":"images/上报数据管理/u745.png"}},
+{
+                  "id":"343761b860cf4b02a516956272360791",
+                  "label":"",
+                  "parentDynamicPanel":"41c0a2692c234e02aa2e52c1de41ac48",
+                  "type":"imageMapRegion",
+                  "styleType":"imageMapRegion",
+                  "visible":true,
+                  "style":{
+                    "location":{
+                      "x":91,
+                      "y":122},
+                    "size":{
+                      "width":25,
+                      "height":19}},
+                  "adaptiveStyles":{
+},
+                  "interactionMap":{
+                    "onClick":{
+                      "description":"OnClick",
+                      "cases":[{
+                          "description":"用例 1",
+                          "isNewIfGroup":false,
+                          "actions":[{
+                              "action":"setFunction",
+                              "description":"Set text on Unidentified equal to &quot;2011-8-24&quot;",
+                              "expr":{
+                                "exprType":"block",
+                                "subExprs":[]}},
+{
+                              "action":"fadeWidget",
+                              "description":"Hide 日历 fade 500 ms",
+                              "objectsToFades":[{
+                                  "objectPath":["41c0a2692c234e02aa2e52c1de41ac48"],
+                                  "fadeInfo":{
+                                    "fadeType":"hide",
+                                    "options":{
+                                      "easing":"fade",
+                                      "duration":500,
+                                      "showType":"none"}}}]}]}]}},
+                  "tabbable":true},
+{
+                  "id":"82f8ee056a914141a942039ce9ab89dc",
+                  "label":"",
+                  "parentDynamicPanel":"41c0a2692c234e02aa2e52c1de41ac48",
+                  "type":"imageMapRegion",
+                  "styleType":"imageMapRegion",
+                  "visible":true,
+                  "style":{
+                    "location":{
+                      "x":9,
+                      "y":191},
+                    "size":{
+                      "width":50,
+                      "height":18}},
+                  "adaptiveStyles":{
+},
+                  "interactionMap":{
+                    "onClick":{
+                      "description":"OnClick",
+                      "cases":[{
+                          "description":"用例 1",
+                          "isNewIfGroup":false,
+                          "actions":[{
+                              "action":"setFunction",
+                              "description":"Set text on Unidentified equal to &quot;&quot;",
+                              "expr":{
+                                "exprType":"block",
+                                "subExprs":[]}}]}]}},
+                  "tabbable":true},
+{
+                  "id":"75ff32b1d542433abdc92e46278357d6",
+                  "label":"",
+                  "parentDynamicPanel":"41c0a2692c234e02aa2e52c1de41ac48",
+                  "type":"imageMapRegion",
+                  "styleType":"imageMapRegion",
+                  "visible":true,
+                  "style":{
+                    "location":{
+                      "x":147,
+                      "y":191},
+                    "size":{
+                      "width":50,
+                      "height":18}},
+                  "adaptiveStyles":{
+},
+                  "interactionMap":{
+                    "onClick":{
+                      "description":"OnClick",
+                      "cases":[{
+                          "description":"用例 1",
+                          "isNewIfGroup":false,
+                          "actions":[{
+                              "action":"fadeWidget",
+                              "description":"Hide 日历 fade 500 ms",
+                              "objectsToFades":[{
+                                  "objectPath":["41c0a2692c234e02aa2e52c1de41ac48"],
+                                  "fadeInfo":{
+                                    "fadeType":"hide",
+                                    "options":{
+                                      "easing":"fade",
+                                      "duration":500,
+                                      "showType":"none"}}}]}]}]}},
+                  "tabbable":true},
+{
+                  "id":"1d02b9fa14074955abf56fcc746a045c",
+                  "label":"",
+                  "parentDynamicPanel":"41c0a2692c234e02aa2e52c1de41ac48",
+                  "type":"imageMapRegion",
+                  "styleType":"imageMapRegion",
+                  "visible":true,
+                  "style":{
+                    "location":{
+                      "x":69,
+                      "y":191},
+                    "size":{
+                      "width":69,
+                      "height":18}},
+                  "adaptiveStyles":{
+},
+                  "interactionMap":{
+                    "onClick":{
+                      "description":"OnClick",
+                      "cases":[{
+                          "description":"用例 1",
+                          "isNewIfGroup":false,
+                          "actions":[{
+                              "action":"setFunction",
+                              "description":"Set text on Unidentified equal to &quot;[[Year]]-[[Month]]-[[Day]]&quot;",
+                              "expr":{
+                                "exprType":"block",
+                                "subExprs":[]}},
+{
+                              "action":"fadeWidget",
+                              "description":"Hide 日历 fade 500 ms",
+                              "objectsToFades":[{
+                                  "objectPath":["41c0a2692c234e02aa2e52c1de41ac48"],
+                                  "fadeInfo":{
+                                    "fadeType":"hide",
+                                    "options":{
+                                      "easing":"fade",
+                                      "duration":500,
+                                      "showType":"none"}}}]}]}]}},
+                  "tabbable":true}]}]},
+{
+          "id":"663b6a42667349e09b163ab77444eb86",
+          "label":"",
+          "type":"imageBox",
+          "styleType":"imageBox",
+          "visible":true,
+          "style":{
+            "fontName":"'应用字体 Regular', '应用字体'",
+            "location":{
+              "x":353,
+              "y":80},
+            "size":{
+              "width":22,
+              "height":19},
+            "borderWidth":"-1"},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"b53492a3e7d24942b48787b455bedb4b",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "fontName":"'应用字体 Regular', '应用字体'",
+                "location":{
+                  "x":353,
+                  "y":80},
+                "size":{
+                  "width":22,
+                  "height":19},
+                "borderWidth":"-1"},
+              "adaptiveStyles":{
+}}],
+          "interactionMap":{
+            "onClick":{
+              "description":"OnClick",
+              "cases":[{
+                  "description":"用例 1",
+                  "isNewIfGroup":false,
+                  "actions":[{
+                      "action":"fadeWidget",
+                      "description":"Toggle 日历 fade 500 ms",
+                      "objectsToFades":[{
+                          "objectPath":["2bd8dd783d1644eea2b084d8c9dcbaec"],
+                          "fadeInfo":{
+                            "fadeType":"toggle",
+                            "options":{
+                              "easing":"fade",
+                              "duration":500,
+                              "showType":"none"}}}]}]}]}},
+          "tabbable":true,
+          "images":{
+            "normal~":"images/上报数据管理/u740.png"}},
+{
+          "id":"2bd8dd783d1644eea2b084d8c9dcbaec",
+          "label":"日历",
+          "type":"dynamicPanel",
+          "styleType":"dynamicPanel",
+          "visible":false,
+          "style":{
+            "location":{
+              "x":301,
+              "y":103},
+            "size":{
+              "width":208,
+              "height":219},
+            "visible":false},
+          "adaptiveStyles":{
+},
+          "scrollbars":"none",
+          "fitToContent":false,
+          "propagate":false,
+          "diagrams":[{
+              "id":"61c7859e6aae4b539ba980a2761f9076",
+              "label":"状态1",
+              "type":"Axure:PanelDiagram",
+              "objects":[{
+                  "id":"cde6ecf8313847e88f1d1b8beaf1d53b",
+                  "label":"",
+                  "parentDynamicPanel":"2bd8dd783d1644eea2b084d8c9dcbaec",
+                  "type":"buttonShape",
+                  "styleType":"buttonShape",
+                  "visible":true,
+                  "style":{
+                    "fontName":"'应用字体 Regular', '应用字体'",
+                    "location":{
+                      "x":1,
+                      "y":1},
+                    "size":{
+                      "width":206,
+                      "height":217},
+                    "borderWidth":"2",
+                    "borderFill":{
+                      "fillType":"solid",
+                      "color":0xFFC9C9C9}},
+                  "adaptiveStyles":{
+},
+                  "objects":[{
+                      "id":"0e9d763e47dc4bcf90073e588a4dca52",
+                      "label":"",
+                      "isContained":true,
+                      "parentDynamicPanel":"2bd8dd783d1644eea2b084d8c9dcbaec",
+                      "type":"richTextPanel",
+                      "styleType":"paragraph",
+                      "visible":true,
+                      "style":{
+                        "fontName":"'应用字体 Regular', '应用字体'",
+                        "location":{
+                          "x":1,
+                          "y":1},
+                        "size":{
+                          "width":206,
+                          "height":217},
+                        "borderWidth":"2",
+                        "borderFill":{
+                          "fillType":"solid",
+                          "color":0xFFC9C9C9}},
+                      "adaptiveStyles":{
+}}],
+                  "images":{
+                    "normal~":"images/上报数据管理/u743.png"}},
+{
+                  "id":"4a18b4c522584471be0cad1d05d8a0e7",
+                  "label":"",
+                  "parentDynamicPanel":"2bd8dd783d1644eea2b084d8c9dcbaec",
+                  "type":"imageBox",
+                  "styleType":"imageBox",
+                  "visible":true,
+                  "style":{
+                    "fontName":"'应用字体 Regular', '应用字体'",
+                    "location":{
+                      "x":4,
+                      "y":9},
+                    "size":{
+                      "width":200,
+                      "height":203},
+                    "borderWidth":"-1"},
+                  "adaptiveStyles":{
+},
+                  "objects":[{
+                      "id":"137b60a8beb6432292fc4951383ff44f",
+                      "label":"",
+                      "isContained":true,
+                      "parentDynamicPanel":"2bd8dd783d1644eea2b084d8c9dcbaec",
+                      "type":"richTextPanel",
+                      "styleType":"paragraph",
+                      "visible":true,
+                      "style":{
+                        "fontName":"'应用字体 Regular', '应用字体'",
+                        "location":{
+                          "x":4,
+                          "y":9},
+                        "size":{
+                          "width":200,
+                          "height":203},
+                        "borderWidth":"-1"},
+                      "adaptiveStyles":{
+}}],
+                  "images":{
+                    "normal~":"images/上报数据管理/u745.png"}},
+{
+                  "id":"3e7005d83c6a413b98f2b85e6194695c",
+                  "label":"",
+                  "parentDynamicPanel":"2bd8dd783d1644eea2b084d8c9dcbaec",
+                  "type":"imageMapRegion",
+                  "styleType":"imageMapRegion",
+                  "visible":true,
+                  "style":{
+                    "location":{
+                      "x":91,
+                      "y":122},
+                    "size":{
+                      "width":25,
+                      "height":19}},
+                  "adaptiveStyles":{
+},
+                  "interactionMap":{
+                    "onClick":{
+                      "description":"OnClick",
+                      "cases":[{
+                          "description":"用例 1",
+                          "isNewIfGroup":false,
+                          "actions":[{
+                              "action":"setFunction",
+                              "description":"Set text on Unidentified equal to &quot;2011-8-24&quot;",
+                              "expr":{
+                                "exprType":"block",
+                                "subExprs":[]}},
+{
+                              "action":"fadeWidget",
+                              "description":"Hide 日历 fade 500 ms",
+                              "objectsToFades":[{
+                                  "objectPath":["2bd8dd783d1644eea2b084d8c9dcbaec"],
+                                  "fadeInfo":{
+                                    "fadeType":"hide",
+                                    "options":{
+                                      "easing":"fade",
+                                      "duration":500,
+                                      "showType":"none"}}}]}]}]}},
+                  "tabbable":true},
+{
+                  "id":"45e30788076c4faeb3d599b811130f7a",
+                  "label":"",
+                  "parentDynamicPanel":"2bd8dd783d1644eea2b084d8c9dcbaec",
+                  "type":"imageMapRegion",
+                  "styleType":"imageMapRegion",
+                  "visible":true,
+                  "style":{
+                    "location":{
+                      "x":9,
+                      "y":191},
+                    "size":{
+                      "width":50,
+                      "height":18}},
+                  "adaptiveStyles":{
+},
+                  "interactionMap":{
+                    "onClick":{
+                      "description":"OnClick",
+                      "cases":[{
+                          "description":"用例 1",
+                          "isNewIfGroup":false,
+                          "actions":[{
+                              "action":"setFunction",
+                              "description":"Set text on Unidentified equal to &quot;&quot;",
+                              "expr":{
+                                "exprType":"block",
+                                "subExprs":[]}}]}]}},
+                  "tabbable":true},
+{
+                  "id":"ae459a968b2e409f92c0d5f7e7d87c16",
+                  "label":"",
+                  "parentDynamicPanel":"2bd8dd783d1644eea2b084d8c9dcbaec",
+                  "type":"imageMapRegion",
+                  "styleType":"imageMapRegion",
+                  "visible":true,
+                  "style":{
+                    "location":{
+                      "x":147,
+                      "y":191},
+                    "size":{
+                      "width":50,
+                      "height":18}},
+                  "adaptiveStyles":{
+},
+                  "interactionMap":{
+                    "onClick":{
+                      "description":"OnClick",
+                      "cases":[{
+                          "description":"用例 1",
+                          "isNewIfGroup":false,
+                          "actions":[{
+                              "action":"fadeWidget",
+                              "description":"Hide 日历 fade 500 ms",
+                              "objectsToFades":[{
+                                  "objectPath":["2bd8dd783d1644eea2b084d8c9dcbaec"],
+                                  "fadeInfo":{
+                                    "fadeType":"hide",
+                                    "options":{
+                                      "easing":"fade",
+                                      "duration":500,
+                                      "showType":"none"}}}]}]}]}},
+                  "tabbable":true},
+{
+                  "id":"acc07d2e9f9a41458f18d9a44f8b6441",
+                  "label":"",
+                  "parentDynamicPanel":"2bd8dd783d1644eea2b084d8c9dcbaec",
+                  "type":"imageMapRegion",
+                  "styleType":"imageMapRegion",
+                  "visible":true,
+                  "style":{
+                    "location":{
+                      "x":69,
+                      "y":191},
+                    "size":{
+                      "width":69,
+                      "height":18}},
+                  "adaptiveStyles":{
+},
+                  "interactionMap":{
+                    "onClick":{
+                      "description":"OnClick",
+                      "cases":[{
+                          "description":"用例 1",
+                          "isNewIfGroup":false,
+                          "actions":[{
+                              "action":"setFunction",
+                              "description":"Set text on Unidentified equal to &quot;[[Year]]-[[Month]]-[[Day]]&quot;",
+                              "expr":{
+                                "exprType":"block",
+                                "subExprs":[]}},
+{
+                              "action":"fadeWidget",
+                              "description":"Hide 日历 fade 500 ms",
+                              "objectsToFades":[{
+                                  "objectPath":["2bd8dd783d1644eea2b084d8c9dcbaec"],
+                                  "fadeInfo":{
+                                    "fadeType":"hide",
+                                    "options":{
+                                      "easing":"fade",
+                                      "duration":500,
+                                      "showType":"none"}}}]}]}]}},
+                  "tabbable":true}]}]}]}},
+  "masters":{
+},
+  "objectPaths":{
+    "e5a70b3b77624d76b19c552ceb0e8b74":{
+      "scriptId":"u0"},
+    "28fe9b45c0e248fdafcc51730534ae32":{
+      "scriptId":"u1"},
+    "41c0a2692c234e02aa2e52c1de41ac48":{
+      "scriptId":"u2"},
+    "506b34ff370e4de297e53925742775ca":{
+      "scriptId":"u3"},
+    "8b40edecad4c452fa56fb3a5d8f26b2e":{
+      "scriptId":"u4"},
+    "d69ee61ef7bb42f7ab52ebe8ca63f786":{
+      "scriptId":"u5"},
+    "ef164cc1131641d0bf92c7fda5bc7963":{
+      "scriptId":"u6"},
+    "343761b860cf4b02a516956272360791":{
+      "scriptId":"u7"},
+    "82f8ee056a914141a942039ce9ab89dc":{
+      "scriptId":"u8"},
+    "75ff32b1d542433abdc92e46278357d6":{
+      "scriptId":"u9"},
+    "1d02b9fa14074955abf56fcc746a045c":{
+      "scriptId":"u10"},
+    "663b6a42667349e09b163ab77444eb86":{
+      "scriptId":"u11"},
+    "b53492a3e7d24942b48787b455bedb4b":{
+      "scriptId":"u12"},
+    "2bd8dd783d1644eea2b084d8c9dcbaec":{
+      "scriptId":"u13"},
+    "cde6ecf8313847e88f1d1b8beaf1d53b":{
+      "scriptId":"u14"},
+    "0e9d763e47dc4bcf90073e588a4dca52":{
+      "scriptId":"u15"},
+    "4a18b4c522584471be0cad1d05d8a0e7":{
+      "scriptId":"u16"},
+    "137b60a8beb6432292fc4951383ff44f":{
+      "scriptId":"u17"},
+    "3e7005d83c6a413b98f2b85e6194695c":{
+      "scriptId":"u18"},
+    "45e30788076c4faeb3d599b811130f7a":{
+      "scriptId":"u19"},
+    "ae459a968b2e409f92c0d5f7e7d87c16":{
+      "scriptId":"u20"},
+    "acc07d2e9f9a41458f18d9a44f8b6441":{
+      "scriptId":"u21"}}});

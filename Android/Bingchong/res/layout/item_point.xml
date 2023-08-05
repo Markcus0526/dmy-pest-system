@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="70px"
+        android:orientation="horizontal" android:layout_marginTop="5px">
+
+        <com.bingchong.widget.BButton
+            android:id="@+id/btn_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/btn_menu"
+            android:text="多拉快急疯了的咧开分局elf蝶恋"
+            android:textColor="@color/menuColor"
+            android:textSize="@dimen/NormalTextSize" android:paddingLeft="60px" android:paddingRight="10px"/>
+        <ImageView
+                android:layout_width="40px"
+                android:layout_height="40px"
+                android:id="@+id/img_mark" android:src="@drawable/place_mark"
+                android:layout_marginLeft="10px" android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

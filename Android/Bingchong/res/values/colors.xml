@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name = "menuColor">#7AB038</color>
+    <color name = "menuLightColor">#BCD79B</color>
+    <color name = "menuTxtColor">#FFFFFF</color>
+    <color name = "background">#ECECEC</color>
+    <color name = "background1">#FFFFFF</color>
+    <color name = "light_red">#AC1000</color>
+    <color name="transparent">#00000000</color>
+    <color name="title">#FFFFFF</color>
+    
+    
+    
+    <color name="semi_transparent">#44444444</color>
+    
+    <color name="lightblack">#2E2E2E</color> 
+    
+    <color name="white">#FFFFFF</color>      
+    <color name="black">#000000</color>
+    <color name="blue">#228b22</color>
+    
+    <color name="light_blue">#33B5E5</color>
+    <color name="dark_blue">#0099CC</color> 
+    
+    <color name="light_voilet">#AA66CC</color> 
+    <color name="dark_voilet">#9933CC</color> 
+    
+    <color name="light_green">#0AA300</color> 
+    <color name="dark_green">#669900</color> 
+    
+    <color name="light_yellow">#FFBB33</color> 
+    <color name="dark_yellow">#FF8800</color> 
+    
+    <color name="light_pink">#FF4444</color> 
+    <color name="dark_pink">#CC0000</color>
+
+    <color name="t_bg1">#333333</color>
+    <drawable name="main_head">#6699CC</drawable>
+    
+ 
+    
+</resources>

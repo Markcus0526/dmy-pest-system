@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name ="tag_key">tag_key</string>
+    <string name="welcome">欢迎使用农作物病虫害预警云管理系统</string>
+    <string name="msg_gps_alert">本软件打开后会自动开启GPS定位及移动数据网络，涉及个人位置信息及网络通讯费用，请确定是否继续使用？</string>
+    <string name="msg_welcome">欢迎使用农作物病虫害预警云管理系统</string>
+    <string name="app_name">病虫</string>
+    <string name="server_busy">获取失败</string>
+    <string name="no_internet">无网络连接！</string>
+    <string name="login">登   录</string>
+    <string name="login_username">用户名:</string>
+    <string name="login_password">密码:</string>
+    <string name="login_login">登   录</string>
+    <string name="select_blight_type">病虫种类</string>    
+    <string name="login_alert_username">用户名不能为空！</string>
+    <string name="login_alert_password">用户密码不能为空！</string>
+    <string name="register_verify_user_empty">用户名不能为空！</string>
+    <string name="register_verify_username_special">用户名不能输入特别文字和中文！</string>
+    <string name="login_alert_error">注册失败，建议您重新注册！</string>   
+    <string name="strNoContent">没有数据。</string>
+    <string name="start_lbl"> 病虫害测报管理云系统</string> 
+    <string name="start_lbl2"> 通辽市植保植检站</string> 
+    <string name="strLoading">数据加载中，请稍等…</string>
+	<string name="strSaveSuccess">保存成功</string>    
+	<string name="strSaveFail">保存失败</string>    
+	<string name="strReportSuccess">上报成功</string>    
+	<string name="strReportFail">上报失败</string> 
+	<string name="strSuccess">成功</string>    
+	<string name="strFail">失败</string>
+	<string name="strHintBlightF">请输入虫害名称</string>
+	<string name="strHintBlightD">请输入病害名称</string>
+		 
+	<string name="strTipNoName">没有名称</string> 
+	<string name="strTipErrorTime">时间错误</string> 
+	<string name="strTipNoPoint">监测点错误</string>
+	<string name="strTipNoForm">表格错误</string>
+    <string name="strTipInavailableArea">您当前所在位置不在测报点范围内，无法进行填报!</string>
+	
+    <string name="titleHistory">历史工作</string>
+    <string name="titleMyTempTask">我的临时工作</string>
+    <string name="titleMyTask">我的工作</string>
+    <string name="titleInfoBlight">病虫害信息管理</string>
+    <string name="titleInfoPlace">固定监测点信息管理</string>
+    <string name="titleInfoHistory">测报点测报工作完成情况</string>
+    <string name="titleInfoMessage">通知详情</string>
+    <string name="titleCreateInfo">预警信息报审</string>
+    <string name="titleTaskFixDetail">常规测报工作详情</string>
+    <string name="titleHelpUser">测报员管理办法</string>
+    <string name="titleTempPoint">非固定测报点审核批复详情</string>
+    <string name="titleTempBlight">侵入病虫害审核批复详情</string>
+    
+    <string name="strSelectXian">地区</string>
+    <string name="strSelectPoint">测报点</string>
+    <string name="strSelectBlight">虫害选择</string>
+    <string name="strSelectForm">测报表格选择</string>
+    <string name="strSelectFiled">数据选择</string>
+    
+    
+    <string name="str_extral_place">非固定测报点</string>
+    <string name="str_extral_blight">新发病虫害</string>
+        
+    <string name="setting_value">设置</string>   
+    <string name="sderror">SD卡出现异常或者没有可用空间，无法继续！SD卡的容量必须至少100MB或以上。</string>
+    
+    <string name="str_blight_fly_info1">形态特征</string>
+    <string name="str_blight_fly_info2">为害特点</string>
+    <string name="str_blight_fly_info3">生活习性</string>
+    <string name="str_blight_fly_info4">发生规律</string>
+    <string name="str_blight_fly_info5">防治方法</string>
+    
+    <string name="str_blight_info1">病 原</string>
+    <string name="str_blight_info2">症 状</string>
+    <string name="str_blight_info3">传播途径</string>
+    <string name="str_blight_info4">发病条件</string>
+    <string name="str_blight_info5">防治方法</string>
+    
+    
+    <string name="task_assign">待审核</string>
+    
+    <string name="btn_ok">确定</string>
+    <string name="btn_cancel">取消</string>   
+    <string name="btn_exit">退出</string>   
+    <string name="strSelectDateTime">日子选择</string>    
+    
+    <string name="strProvince">省(市)</string>    
+    <string name="strCity">地(市)</string>    
+    <string name="strVillige">区(旗)</string>    
+    <string name="strAll">全部</string>
+  	<string name="strYear">年</string>
+    <string name="strMonth">月</string>
+    <string name="strDay">日</string>
+    <string name="strHour">时</string>
+    <string name="strMinute">分</string>
+    <string name="strSecond">秒</string>
+            
+    <string name="task_noAccept">未接受</string>        
+    <string name="task_Accept">已接受</string>        
+    <string name="task_Complete">已完成</string>      
+    <string name="task_noComplete">未完成 </string>
+    
+    <string name="review_Accept">已通过</string>        
+    <string name="review_NoAccept">未通过</string>        
+    <string name="review_Wait">待审核</string>      
+        
+    <string name="blight_fly">虫害</string>        
+    <string name="blight_disease">病害</string>     
+    
+    <string name="no_network">网路不能连接</string>
+    <string name="no_location_service_found">没有位置服务发现</string>
+    <string name="gps_now_disabled">GPS现在被禁用</string>
+    <string name="gps_now_enabled">GPS现在恢复</string>
+    <string name="gps_msg_please_activate_gps">如需获取精确的位置服务，请您在位置设置中打开GPS。</string>
+    <string name="gps_msg_please_deactivate_gps">如需节省手机电池，请您在位置设置中关闭GPS。</string>
+    <string name="gps_btn_set">设置</string>
+    <string name="gps_btn_cancel">取消</string>
+
+    <!-- version update strings -->
+    <string name="download">下载</string>
+    <string name="connect">连接</string>
+    <string name="downloadok">下载成功</string>
+    <string name="nonewversion">现在的版本是最新版本。</string>
+    <string name="askupdate1">您当前版本为 </string>
+    <string name="askupdate2">。 有最新版本 </string>
+    <string name="askupdate3">，是否安装？</string>
+    <string name="alert_dialog_ok">确认</string>
+    <string name="alert_dialog_cancel">取消</string>
+    <string name="alert_dialog_title">提示</string>
+    <string name="alert_version_format_error">版本号码格式不准</string>
+
+    <string name="STR_CONN_ERROR">网络不给力，请稍后重试</string>
+    <string name="STR_LOGIN_FAILURE">用户名或者密码错误</string>
+
+    <string name="str_exit">退出</string>
+    <string name="str_accept">接受</string>
+    <string name="str_refuse">拒绝</string>
+    <string name="str_resume">确认</string>
+    <string name="str_cancel">取消</string>
+    <string name="str_pause">挂断</string>
+    <string name="str_send">发送</string>
+    <string name="str_call">呼叫</string>
+    <string name="str_back">返回</string>
+    <string name="str_menu">菜单</string>
+    <string name="str_switchcamera">切换摄像头</string>
+    <string name="str_serveripinput">请输入服务器地址! </string>
+    <string name="str_serverportinput">请输入服务器端口号!</string>
+    <string name="str_setting">设置</string>
+    <string name="str_save">保存修改</string>
+    <string name="no_onlines">当前没有在线用户</string>
+    <string name="str_returncode_bussiness">呼叫对象正忙，请稍后再试</string>
+    <string name="str_returncode_offline">呼叫用户不在线</string>
+    <string name="str_user_offline">目标用户离线</string>
+    <string name="str_returncode_requestcancel">用户取消呼叫</string>
+    <string name="str_returncode_requestrefuse">用户拒绝被呼叫</string>
+    <string name="str_returncode_disconnect">对方网络异常</string>
+    <string name="str_returncode_timeout">呼叫超时</string>
+    <string name="sessioning_reqite">请求与您通话！</string>
+    <string name="str_calling">呼叫成功，正在等待用户响应</string>
+    <string name="session_end">会话已经挂断</string>
+    <string name="str_targetwrong">不能呼叫自己！</string>
+    <string name="str_endsession">是否想要结束当前通话</string>
+    <string name="end_session">结束通话</string>
+    <string name="record_session">录制</string>
+    <string name="str_againlogin">账号在异处登录，请重新登录</string>
+    <string name="str_login_failed">登录系统失败</string>
+    <string name="str_enterroom_failed">进入房间失败</string>
+    <string name="str_networkcheck">当前网络连接有异常，请检查网络</string>
+    <string name="str_exitresume">是否想要退出整个应用程序</string>
+    <string name="str_serverlink_close">与服务器断开连接，错误代码是</string>
+    <string name="str_serverip">服务器地址: </string>
+    <string name="str_serverport">服务器端口号: </string>
+
+    <string name="str_dialog_title_protip">专家视频预约系统提示</string>
+    <string name="BACKING_RUNING">专家视频预约系统正在后台运行</string>
+    <string name="experts_wait">请等待农民预约……</string>
+
+    <string name="experts_list">专家列表</string>
+    <string name="experts_count">0/5</string>
+    <string name="experts_detail">专家详细</string>
+    <string name="name">姓名：</string>
+    <string name="sex">性别：</string>
+    <string name="online_state">状态：</string>
+    <string name="unit">职称：</string>
+    <string name="appointment">视　频</string>
+    <string name="phone">电　话</string>
+    <string name="jianjie">简　介</string>
+    <string name="description">专业：</string>
+    <string name="config">配置</string>
+    <string name="config_video">设置</string>
+    <string name="go_back">返回</string>
+    <string name="save">保存</string>
+
+    <string name="low_quality">较低质量</string>
+    <string name="middle_quality">中等质量</string>
+    <string name="high_quality">较高质量</string>
+
+    <string name="agriculture">农业专家</string>
+    <string name="ranching">牧业专家</string>
+    <string name="forestry">林业专家</string>
+
+    <string name="phone_num">手机号：</string>
+    <string name="phone_num_hint">请输入手机号</string>
+    <string name="user_name">用户名：</string>
+    <string name="user_password">密　码：</string>
+    <string name="user_name_hint">请输入用户名</string>
+    <string name="user_password_hint">请输入密码</string>
+    <string name="visitor_login">农牧民登录</string>
+    <string name="experts_login">专家入口</string>
+    <string name="login_cancle">返回</string>
+
+    <string name="history_user_type_completed">completed</string>
+    <string name="history_user_type_notcompleted">notcompleted</string>
+    <string name="history_user_type_waiting">waiting</string>
+    <string name="history_user_type_saved">saved</string>
+
+</resources>

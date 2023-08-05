@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/item_layout">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/content_layout" android:background="#FFFFFF"
+            android:padding="20px">
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="New Text"
+                android:id="@+id/txt_item" android:gravity="center" android:textColor="#505050"
+                android:textSize="26px"/>
+    </RelativeLayout>
+    <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_item" android:layout_alignTop="@+id/content_layout"
+            android:layout_alignLeft="@+id/content_layout" android:layout_alignBottom="@+id/content_layout"
+            android:layout_alignRight="@+id/content_layout" android:background="@drawable/btn_empty"/>
+</RelativeLayout>

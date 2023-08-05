@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="450px"
+                android:layout_height="180px" android:background="@android:color/darker_gray">
+
+    <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="120px"
+            android:text="@string/gps_msg_please_activate_gps"
+            android:id="@+id/textView" android:layout_alignParentLeft="true" android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true" android:background="@android:color/black"
+            android:textColor="@android:color/white" android:padding="20px" android:textSize="@dimen/NormalTextSize"/>
+    <Button
+            android:layout_width="210px"
+            android:layout_height="60px"
+            android:text="@string/gps_btn_set"
+            android:id="@+id/btnSet" android:layout_alignParentLeft="true" android:layout_marginLeft="10px"
+            android:layout_alignParentTop="true" android:layout_marginTop="120px" android:textSize="@dimen/NormalTextSize"
+            android:background="@android:drawable/btn_default"/>
+    <Button
+            android:layout_width="210px"
+            android:layout_height="60px"
+            android:text="@string/gps_btn_cancel"
+            android:id="@+id/btnCancel" android:layout_toRightOf="@+id/btnSet" android:layout_alignTop="@+id/btnSet"
+            android:textSize="@dimen/NormalTextSize" android:background="@android:drawable/btn_default"/>
+</RelativeLayout>

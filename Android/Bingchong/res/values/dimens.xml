@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+<!-- 				Start Radio21Player GUI guide 						-->
+<!-- ////////////////////////////////////////////////////////// -->
+
+    <dimen name="TitleBarSize">70px</dimen>
+    <dimen name="MenuTextSize">22px</dimen>
+    <dimen name="TitleTextSize">30px</dimen>
+    <dimen name="ItemTextSize">15px</dimen>
+    <dimen name="NormalTextSize">25px</dimen>
+
+    <dimen name="activity_horizontal_margin">25px</dimen>
+    <dimen name="activity_vertical_margin">25px</dimen>
+    <dimen name="login_title_margin_top">90px</dimen>
+    <dimen name="login_phone_num_edit_size">300px</dimen>
+    <dimen name="login_phone_num_margin_top_size">50px</dimen>
+    <dimen name="head_height">45dp</dimen>
+
+    <dimen name="login_title_text_size">25sp</dimen>
+    <dimen name="login_phone_num_text_size">18sp</dimen>
+    <dimen name="company_text_size">14sp</dimen>
+    <dimen name="login_btn_size">250dp</dimen>
+    <dimen name="experts_items_text_size">16sp</dimen>
+    <dimen name="experts_detail_text_size">18sp</dimen>
+    <dimen name="experts_list_title_text_size">17sp</dimen>
+    <dimen name="experts_wait_text_size">30sp</dimen>
+    <dimen name="footer_height">44dp</dimen>
+
+    <dimen name="bbuton_rounded_corner_radius">5dp</dimen>
+    <dimen name="list_avatar_size">36dp</dimen>
+    <dimen name="list_serving_logo_size">40dp</dimen>
+    <dimen name="attach_pic_size">75dp</dimen>
+
+</resources>

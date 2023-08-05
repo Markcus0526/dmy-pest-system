@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="master" Class="MasterDBDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=192.168.1.18;Initial Catalog=master;User ID=sa" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="masterConnectionString" Provider="System.Data.SqlClient" />
+  <Function Name="dbo.BingChongRestore" Method="BingChongRestore">
+    <Parameter Name="PathName" Parameter="pathName" Type="System.String" DbType="NVarChar(300)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.BingChongBackup" Method="BingChongBackup">
+    <Return Type="System.Int32" />
+  </Function>
+</Database>

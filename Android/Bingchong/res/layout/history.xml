@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/rlTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/TitleBarSize"
+        android:background="@color/menuColor"
+        android:orientation="horizontal" >
+
+        <ImageButton
+                android:layout_width="70px"
+                android:layout_height="match_parent"
+                android:id="@+id/btn_back" android:background="@null" android:scaleType="centerInside"
+                android:src="@drawable/btn_back" android:padding="15px"/>
+
+        <TextView
+            android:id="@+id/txtTitle"
+            style="@style/TopText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|right|center_horizontal"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="历史测报数据"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10px"
+        android:gravity="center"
+        android:orientation="horizontal" android:id="@+id/rlFilter" android:layout_below="@+id/rlTitle">
+
+        <Spinner
+                android:id="@+id/spinner_level"
+                android:layout_width="200px"
+                android:layout_height="50px"
+                android:background="@color/menuColor"
+                android:layout_below="@+id/rlSearch" android:layout_marginLeft="20px" android:paddingLeft="5px"/>
+        <Spinner android:id="@+id/spinner_type" android:layout_width="200px" android:layout_height="50px"
+                 android:background="@color/menuColor" android:paddingLeft="5px" android:layout_below="@+id/rlSearch"
+                 android:layout_marginLeft="20px" android:layout_toRightOf="@+id/spinner_level"
+                 android:layout_alignParentRight="true" android:layout_marginRight="20px"/>
+        <Spinner android:id="@+id/spinner_sheng" android:layout_width="150px" android:layout_height="70px"
+                 android:background="@color/menuColor" android:paddingLeft="5px" android:layout_below="@+id/spinner_level"
+                 android:layout_marginLeft="20px"
+                 android:layout_alignParentRight="false"
+                 android:layout_marginTop="10px"/>
+        <Spinner android:id="@+id/spinner_shi" android:layout_width="150px" android:layout_height="70px"
+                 android:background="@color/menuColor" android:paddingLeft="5px"
+                 android:layout_marginLeft="10px" android:layout_toRightOf="@+id/spinner_sheng"
+                 android:layout_alignParentRight="false" android:layout_alignTop="@+id/spinner_sheng"/>
+        <Spinner android:id="@+id/spinner_xian" android:layout_width="200px" android:layout_height="70px"
+                 android:background="@color/menuColor" android:paddingLeft="5px"
+                 android:layout_marginLeft="10px" android:layout_toRightOf="@+id/spinner_shi"
+                 android:layout_alignParentRight="true" android:layout_marginRight="20px"
+                 android:layout_alignTop="@+id/spinner_sheng"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical" android:id="@+id/rlContent"
+        android:layout_marginTop="10px" android:layout_marginBottom="10px"
+        android:layout_below="@+id/rlFilter">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" android:layout_marginLeft="20px" android:layout_marginRight="20px">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+
+                <ListView
+                    android:id="@+id/list_data"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:divider="@null" />                    
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txt_no_content"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="@string/strNoContent"
+                android:textSize="22sp"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

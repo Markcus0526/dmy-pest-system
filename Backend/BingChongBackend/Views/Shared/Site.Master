@@ -1,0 +1,364 @@
+﻿<%@ Master Language="C#" Inherits="System.Web.Mvc.ViewMasterPage" %>
+<%@ Import Namespace="BingChongBackend.Models" %>
+
+<% var userrole = CommonModel.GetSessionUserRoles(); %>
+<% var userlevel = CommonModel.GetSessionUserLevel(); %>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta charset="utf-8" />
+	<title>农作物病虫害</title>
+
+	<meta name="description" content="" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+
+	<!-- bootstrap & fontawesome -->
+	<link rel="stylesheet" href="<%= ViewData["rootUri"] %>content/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="<%= ViewData["rootUri"] %>content/css/font-awesome.min.css" />
+
+    <asp:ContentPlaceHolder ID="PageStyle" runat="server" />
+
+	<!-- ace styles -->
+	<link rel="stylesheet" href="<%= ViewData["rootUri"] %>content/css/ace.min.css" />
+	<link rel="stylesheet" href="<%= ViewData["rootUri"] %>content/css/style.css" />
+
+	<!--[if lte IE 9]>
+		<link rel="stylesheet" href="<%= ViewData["rootUri"] %>content/css/ace-part2.min.css" />
+	<![endif]-->
+	<link rel="stylesheet" href="<%= ViewData["rootUri"] %>content/css/ace-skins.min.css" />
+	<link rel="stylesheet" href="<%= ViewData["rootUri"] %>content/css/ace-rtl.min.css" />
+
+	<!--[if lte IE 9]>
+		<link rel="stylesheet" href="<%= ViewData["rootUri"] %>content/css/ace-ie.min.css" />
+	<![endif]-->
+
+	<!-- inline styles related to this page -->
+
+	<!-- ace settings handler -->
+	<script src="<%= ViewData["rootUri"] %>content/js/ace-extra.min.js"></script>
+
+	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+
+	<!--[if lte IE 8]>
+	<script src="<%= ViewData["rootUri"] %>content/js/html5shiv.js"></script>
+	<script src="<%= ViewData["rootUri"] %>content/js/respond.min.js"></script>
+	<![endif]-->
+
+		<!--[if !IE]> -->
+		<script src="<%= ViewData["rootUri"] %>content/js/jquery.min.js"></script>
+		<!-- <![endif]-->
+
+		<!--[if IE]>
+        <script src="<%= ViewData["rootUri"] %>content/js/jquery.minie.js"></script>
+        <![endif]-->
+
+		<!--[if !IE]> -->
+		<script type="text/javascript">
+		    window.jQuery || document.write("<script src='<%= ViewData["rootUri"] %>content/js/jquery.min.js'>" + "<" + "/script>");
+		</script>
+		<!-- <![endif]-->
+
+		<!--[if IE]>
+        <script type="text/javascript">
+         window.jQuery || document.write("<script src='<%= ViewData["rootUri"] %>content/js/jquery1x.min.js'>"+"<"+"/script>");
+        </script>
+        <![endif]-->
+        <style type="text/css">
+          .submenu > li > a  
+            {
+                font-family:Microsoft YaHei;
+            }
+          .form-group > label 
+          {
+                font-family:Microsoft YaHei;
+          }  
+          h5 
+          {
+                font-family:Microsoft YaHei;
+              
+              }
+        .select2-container .select2-choice {
+                font-family:Microsoft YaHei;
+            
+            font-size: 0.9em;  
+        }
+        .select2-result-label 
+        {       font-family:Microsoft YaHei;
+                font-size: 0.9em;  
+        }
+        input 
+        {
+            font-family:Microsoft YaHei;
+                font-size: 0.9em;
+            }
+        .dialog-titlebar-close > .ui-icon
+        {
+            display:none;
+            width:0px;
+            }
+        </style>
+</head>
+
+	<body class="no-skin">
+    <div id="nb2">
+		<div id="navbar" class="minwidth navbar navbar-default navbar-collapse h-navbar">
+			<script type="text/javascript">
+			    try { ace.settings.check('navbar', 'fixed') } catch (e) { }
+			</script>
+
+			<div class="navbar-container" id="navbar-container">
+				<div class="navbar-header pull-left">
+					<a href="#" class="navbar-brand">
+							<img src="<%= ViewData["rootUri"] %>content/img/bing1.png" style="margin-top:10px" />
+					</a>
+
+					<%--<button class="pull-right navbar-toggle navbar-toggle-img collapsed" type="button" data-toggle="collapse" data-target=".navbar-buttons,.navbar-menu">
+						<span class="sr-only">Toggle user menu</span>
+
+						<img src="<%= ViewData["rootUri"] %>Content/avatars/user.jpg" alt="账号图片" />
+					</button>
+
+					<button class="pull-right navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".sidebar">
+						<span class="sr-only">Toggle sidebar</span>
+
+						<span class="icon-bar"></span>
+
+						<span class="icon-bar"></span>
+
+						<span class="icon-bar"></span>
+					</button>--%>
+				</div>
+
+<%
+    FormsIdentity fId = (FormsIdentity)HttpContext.Current.User.Identity;
+    FormsAuthenticationTicket authTicket = fId.Ticket;
+     %>
+				<div class="navbar-buttons navbar-header pull-right" role="navigation">
+					 <div class="pull-right"  style="margin-top:10px;">
+                        <h5 >
+						    <small style="color:#fff">欢迎您，<%= authTicket.Name %>
+                            </br>
+                            </br>
+                                <a href="javascript:void(0)" onclick="SetHome(this,window.location)" style="color:#fff">设为首页</a>
+                                <a href="<%= ViewData["rootUri"] %>Settings/PassWord" style="color:#fff">修改密码</a>
+                                <a href="<%= ViewData["rootUri"] %>Account/LogOff" style="color:#fff">退出</a>
+                            </small>
+					    </h5>
+                    </div>
+                    <span class="pull-right notice badge badge-grey hide" style="position:relative;left:-37px;top:3px">0</span>
+
+                    <div class=" pull-right" style="margin-top:5px;margin-right:20px">
+                        <a href="<%= ViewData["rootUri"] %>WorkingManage/Notice" style="color:#fff">
+                        <img src="<%= ViewData["rootUri"] %>Content/img/notice.png" style="width:80%;margin-left:5px"/></br>
+                        消息通知
+                        </a>
+                    </div>
+
+                    <div class="pull-right"   style="margin-top:5px;margin-right:20px">
+                        <a href="<%= ViewData["rootUri"] %>Analysis/SummaryStatistics" style="color:#fff" >                        
+                        <img src="<%= ViewData["rootUri"] %>Content/img/anilyse.png" style="width:80%;margin-left:5px" /></br>
+                            统计分析 
+                        </a>
+                        
+                    </div>
+                    <div class=" pull-right" style="margin-top:7px;margin-right:20px">
+                        <a href="<%= ViewData["rootUri"] %>UpdatedInfo/UpdatedInfoManage" style="color:#fff">                        
+                        <img src="<%= ViewData["rootUri"] %>Content/img/export.png" style="width:79%;margin-left:5px" /></br>数据导出
+                        </a>
+                    </div>
+                   
+                    <div  style="margin-top:5px;margin-right:20px ;color:#fff" class="dropdown pull-left">
+                        <a href="<%= ViewData["rootUri"] %>Settings/PassWord" style="color:#fff" class="dropdown-toggle"  data-toggle="dropdown">                                                
+                        <img src="<%= ViewData["rootUri"] %>Content/img/settings2.png" style="width:40px;margin-left:5px;margin-top:3px;margin-bottom:2px" /></br>
+                        <span style="">系统设置</span>
+                        </a>
+                        <ul class="dropdown-menu-left dropdown-navbar dropdown-menu dropdown-caret dropdown-close" role="menu" aria-labelledby="dLabel" >
+                
+                         <li class="dropdown-submenu <% if (ViewData["level2nav"] != null && ViewData["level2nav"] == "RoleManage") { %>active <% } %>">
+				            <a href="<%= ViewData["rootUri"] %>Settings/RoleManage"><i class="menu-icon fa fa-caret-right"></i>角色设置</a>
+                            <b class="arrow"></b>
+			             </li>
+                          
+                            <!--<li role="presentation" class="divider"></li>-->
+                              <%if (userlevel != CommonModel.UserLevel.XIANJI)
+              {%>
+                           <li class=" dropdown-submenu <% if (ViewData["level2nav"] != null && ViewData["level2nav"] == "RegionManage") { %>active <% } %>">
+                            <a href="<%= ViewData["rootUri"] %>Settings/RegionManage"><i class="menu-icon fa fa-caret-right"></i>地区管理</a>
+                            <b class="arrow"></b>
+			               </li>
+            <%} %>
+                           <li class="dropdown-submenu <%  if (ViewData["level2nav"] != null && ViewData["level2nav"] == "UnitSettings") { %>active <% } %>">
+				                <a href="<%= ViewData["rootUri"] %>Settings/UnitSettings"><i class="menu-icon fa fa-caret-right"></i>直属单位设置</a>
+                                <b class="arrow"></b>
+			               </li>
+                           <li class="dropdown-submenu <% if (ViewData["level2nav"] != null && ViewData["level2nav"] == "UserManage") { %>active <% } %>">
+				                <a href="<%= ViewData["rootUri"] %>Settings/UserManage"><i class="menu-icon fa fa-caret-right"></i>用户管理</a>
+                                <b class="arrow"></b>
+			                </li>
+                            <li class="dropdown-submenu<% if (ViewData["level2nav"] != null && ViewData["level2nav"] == "FieldManage") { %>active <% } %>">
+				                <a href="<%= ViewData["rootUri"] %>Settings/FieldManage"><i class="menu-icon fa fa-caret-right"></i>字段设置</a>
+                                <b class="arrow"></b>
+			                </li>
+                            <li class="dropdown-submenu <% if (ViewData["level2nav"] != null && ViewData["level2nav"] == "TableManage") { %>active <% } %>">
+				                <a href="<%= ViewData["rootUri"] %>Settings/TableManage"><i class="menu-icon fa fa-caret-right"></i>表格管理</a>
+                                <b class="arrow"></b>
+			                </li>
+                            <li class="dropdown-submenu <% if (ViewData["level2nav"] != null && ViewData["level2nav"] == "SystemRecover") { %>active <% } %>">
+				                <a href="<%= ViewData["rootUri"] %>Settings/SystemRecover"><i class="menu-icon fa fa-caret-right"></i>系统恢复</a>
+                                <b class="arrow"></b>
+			                </li>
+                        </ul>
+                    </div>
+
+						<%--<ul class="user-menu dropdown-menu-right dropdown-menu dropdown-yellow dropdown-caret dropdown-close">
+							<li>
+								<a href="<%= ViewData["rootUri"] %>User/ChangePwd">
+									<i class="ace-icon fa fa-user"></i>
+									修改密码
+								</a>
+							</li>
+
+							<li class="divider"></li>
+
+							<li>
+								<a href="<%= ViewData["rootUri"] %>Account/LogOff">
+									<i class="ace-icon fa fa-power-off"></i>
+									退出
+								</a>
+							</li>
+						</ul>--%>
+
+				</div>
+			</div><!-- /.navbar-container -->
+		</div>
+        </div>
+		<div class="main-container" id="main-container">
+           <div id="cebian">
+			<script type="text/javascript">
+			    try { ace.settings.check('main-container', 'fixed') } catch (e) { }
+			</script>
+
+			<div id="sidebar" class="sidebar responsive">
+
+                <% Html.RenderPartial("LeftNav", ViewContext.ViewData); %>
+
+			</div>
+            </div>
+			<div class="main-content">
+				<div class="breadcrumbs" id="breadcrumbs">
+					<script type="text/javascript">
+					    try { ace.settings.check('breadcrumbs', 'fixed') } catch (e) { }
+					</script>
+
+					<ul class="breadcrumb">
+						<li>
+							<i class="ace-icon fa fa-home home-icon"></i>
+							<a href="<%= ViewData["rootUri"] %>">主页</a>
+						</li>
+                       <%-- <% foreach (var item in navinfo)
+                           {
+                               if (!item.isend)
+                               { %>
+						        <li>
+							        <a href="<%= item.linkurl %>"><%= item.title%></a>
+						        </li>
+
+                               <% 
+                               }
+                               else
+                               { %>
+        						<li class="active"><%= item.title %></li>
+                               <% 
+                               }
+                                %>
+                        <% } %>--%>
+					</ul><!-- /.breadcrumb -->
+
+
+				</div>
+				<div class="page-content">
+                    <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+				</div><!-- /.page-content -->
+
+			</div><!-- /.main-content -->
+
+			<div class="footer" id="foott">
+				<div class="footer-inner">
+					<div class="footer-content">
+						<%--<span class="bigger-120">
+							<span class="blue bolder">微奥莱</span>
+							&copy; 2013-2014
+						</span>--%>
+
+						&nbsp; &nbsp;
+					</div>
+				</div>
+			</div>
+
+			<a href="#" id="btn-scroll-up" class="btn-scroll-up btn btn-sm btn-inverse">
+				<i class="ace-icon fa fa-angle-double-up icon-only bigger-110"></i>
+			</a>
+		</div><!-- /.main-container -->
+
+		<!-- basic scripts -->
+
+		<script type="text/javascript">
+		    if ('ontouchstart' in document.documentElement) document.write("<script src='<%= ViewData["rootUri"] %>content/js/jquery.mobile.custom.min.js'>" + "<" + "/script>");
+		function cli(){
+
+
+        $('#menubutton').dropdown('toggle')
+        }
+        </script>
+		<script src="<%= ViewData["rootUri"] %>content/js/bootstrap.min.js"></script>
+
+        <asp:ContentPlaceHolder ID="PageScripts" runat="server" />
+
+		<!-- ace scripts -->
+		<script src="<%= ViewData["rootUri"] %>content/js/ace-elements.min.js"></script>
+		<script src="<%= ViewData["rootUri"] %>content/js/ace.min.js"></script>
+
+
+		<!-- inline scripts related to this page -->
+	</body>
+    <script type="text/javascript">
+        jQuery(function ($) {
+            $.ajax({
+                type: "POST",
+                url: '<%= ViewData["rootUri"] %>' + 'WorkingManage/GetUnreadNotice',
+                dataType: "json",
+                data: $('#validation-form').serialize(),
+                success: function (data) {
+                    if (data != 0) {
+                        $(".notice").removeClass("hide");
+                        $(".notice").html(data);
+                    }
+                    else {
+                        $(".notice").addClass("hide");
+                    }
+                },
+                error: function (data) {
+                    alert("Error: " + data.status);
+                }
+            });
+        });
+
+        function SetHome(obj, url) {
+            try {
+                obj.style.behavior = 'url(#default#homepage)';
+                obj.setHomePage(url);
+            } catch (e) {
+                if (window.netscape) {
+                    try {
+                        netscape.security.PrivilegeManager.enablePrivilege("UniversalXPConnect");
+                    } catch (e) {
+                        alert("抱歉，此操作被浏览器拒绝！\n\n请在浏览器地址栏输入“about:config”并回车然后将[signed.applets.codebase_principal_support]设置为'true'");
+                    }
+                } else {
+                    alert("抱歉，您所使用的浏览器无法完成此操作。\n\n您需要手动将【" + url + "】设置为首页。");
+                }
+            }
+        }
+    </script>
+</html>

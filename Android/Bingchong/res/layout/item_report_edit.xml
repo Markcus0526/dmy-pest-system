@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background1"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="40px"
+        android:layout_margin="10px"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/txtLabel"
+            android:layout_width="180px"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Name"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/menuColor"
+            android:textSize="@dimen/NormalTextSize" android:gravity="center_vertical"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutEdt"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10px"
+        android:layout_weight="1"
+        android:background="@drawable/item_rect"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/txtEdt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10px"
+            android:text="Name"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/menuColor"
+            android:textSize="@dimen/NormalTextSize" android:gravity="center_vertical"/>
+
+    </LinearLayout>
+
+</LinearLayout>

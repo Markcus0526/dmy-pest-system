@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:id="@+id/parent_layout" android:background="#00000000">
+
+	<RelativeLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:id="@+id/content_layout"
+			android:background="@drawable/round_dimgray_gray" android:paddingBottom="20px" android:paddingLeft="14px"
+			android:paddingRight="14px">
+		<ImageView
+				android:layout_width="100px"
+				android:layout_height="100px"
+				android:id="@+id/img_progressor"
+				android:layout_centerHorizontal="true" android:layout_marginTop="20px"
+				android:src="@drawable/bk_progress" android:scaleType="fitCenter"/>
+		<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="999"
+				android:id="@+id/txt_counter" android:textColor="#FFFFFF" android:textSize="30px"
+				android:layout_alignTop="@+id/img_progressor" android:layout_alignLeft="@+id/img_progressor"
+				android:layout_alignBottom="@+id/img_progressor" android:layout_alignRight="@+id/img_progressor"
+				android:gravity="center" android:singleLine="true"/>
+		<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:id="@+id/txt_message" android:layout_below="@+id/img_progressor"
+				android:gravity="center"
+				android:textColor="#FFFFFF" android:textSize="24px" android:layout_marginTop="20px"
+				android:layout_centerHorizontal="true"/>
+	</RelativeLayout>
+</RelativeLayout>

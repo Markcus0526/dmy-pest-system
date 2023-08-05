@@ -1,0 +1,503 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_point_info"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    
+    <ScrollView android:layout_width="fill_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+    	android:layout_height="fill_parent">    
+    	
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/background1" >
+
+        <com.bingchong.widget.LineView
+            android:layout_width="1px"
+            android:layout_height="fill_parent" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="120px"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3px"
+                        android:text="测报点名称"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="@color/menuColor"
+                        android:textSize="@dimen/NormalTextSize" />
+
+                    <com.bingchong.widget.LineView
+                        android:layout_width="1px"
+                        android:layout_height="fill_parent" />
+
+                    <EditText
+                        android:id="@+id/edt_place_name"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:inputType="textPersonName"
+                        android:paddingLeft="15px"
+                        android:textColor="@color/menuColor"
+                        android:textSize="@dimen/NormalTextSize" />
+                </LinearLayout>
+
+                <com.bingchong.widget.LineView
+                    android:layout_width="wrap_content"
+                    android:layout_height="1px" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="120px"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3px"
+                        android:text="东经"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="@color/menuColor"
+                        android:textSize="@dimen/NormalTextSize" />
+
+                    <com.bingchong.widget.LineView
+                        android:layout_width="1px"
+                        android:layout_height="fill_parent" />
+
+                    <EditText
+                        android:id="@+id/edt_place_long"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:inputType="numberDecimal"
+                        android:paddingLeft="15px"
+                        android:textColor="@color/menuColor"
+                        android:textSize="@dimen/NormalTextSize" />
+                </LinearLayout>
+
+                <com.bingchong.widget.LineView
+                    android:layout_width="wrap_content"
+                    android:layout_height="1px" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="120px"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3px"
+                        android:text="北纬"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="@color/menuColor"
+                        android:textSize="@dimen/NormalTextSize" />
+
+                    <com.bingchong.widget.LineView
+                        android:layout_width="1px"
+                        android:layout_height="fill_parent" />
+
+                    <EditText
+                        android:id="@+id/edt_place_lat"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:inputType="numberDecimal"
+                        android:paddingLeft="15px"
+                        android:textColor="@color/menuColor"
+                        android:textSize="@dimen/NormalTextSize" />
+                </LinearLayout>
+
+                <com.bingchong.widget.LineView
+                    android:layout_width="wrap_content"
+                    android:layout_height="1px" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="120px"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3px"
+                        android:text="乡镇"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="@color/menuColor"
+                        android:textSize="@dimen/NormalTextSize" />
+
+                    <com.bingchong.widget.LineView
+                        android:layout_width="1px"
+                        android:layout_height="fill_parent" />
+
+                    <EditText
+                        android:id="@+id/edt_place_info1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:inputType="textPersonName"
+                        android:paddingLeft="15px"
+                        android:textColor="@color/menuColor"
+                        android:textSize="@dimen/NormalTextSize" />
+                </LinearLayout>
+
+                <com.bingchong.widget.LineView
+                    android:layout_width="wrap_content"
+                    android:layout_height="1px" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="120px"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3px"
+                        android:text="村组"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="@color/menuColor"
+                        android:textSize="@dimen/NormalTextSize" />
+
+                    <com.bingchong.widget.LineView
+                        android:layout_width="1px"
+                        android:layout_height="fill_parent" />
+
+                    <EditText
+                        android:id="@+id/edt_place_info2"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:inputType="textPersonName"
+                        android:paddingLeft="15px"
+                        android:textColor="@color/menuColor"
+                        android:textSize="@dimen/NormalTextSize" />
+                </LinearLayout>
+
+                <com.bingchong.widget.LineView
+                    android:layout_width="wrap_content"
+                    android:layout_height="1px" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="120px"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3px"
+                        android:text="田块面积"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="@color/menuColor"
+                        android:textSize="@dimen/NormalTextSize" />
+
+                    <com.bingchong.widget.LineView
+                        android:layout_width="1px"
+                        android:layout_height="fill_parent" />
+
+                    <EditText
+                        android:id="@+id/edt_place_info3"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:inputType="textPersonName"
+                        android:paddingLeft="15px"
+                        android:textColor="@color/menuColor"
+                        android:textSize="@dimen/NormalTextSize" />
+                </LinearLayout>
+
+                <com.bingchong.widget.LineView
+                    android:layout_width="wrap_content"
+                    android:layout_height="1px" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="120px"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3px"
+                        android:text="代表面积"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="@color/menuColor"
+                        android:textSize="@dimen/NormalTextSize" />
+
+                    <com.bingchong.widget.LineView
+                        android:layout_width="1px"
+                        android:layout_height="fill_parent" />
+
+                    <EditText
+                        android:id="@+id/edt_place_info4"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:inputType="textPersonName"
+                        android:paddingLeft="15px"
+                        android:textColor="@color/menuColor"
+                        android:textSize="@dimen/NormalTextSize" />
+                </LinearLayout>
+
+                <com.bingchong.widget.LineView
+                    android:layout_width="wrap_content"
+                    android:layout_height="1px" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="120px"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3px"
+                        android:text="种植作物"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="@color/menuColor"
+                        android:textSize="@dimen/NormalTextSize" />
+
+                    <com.bingchong.widget.LineView
+                        android:layout_width="1px"
+                        android:layout_height="fill_parent" />
+
+                    <EditText
+                        android:id="@+id/edt_place_info5"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:inputType="textPersonName"
+                        android:paddingLeft="15px"
+                        android:textColor="@color/menuColor"
+                        android:textSize="@dimen/NormalTextSize" />
+                </LinearLayout>
+
+                <com.bingchong.widget.LineView
+                    android:layout_width="wrap_content"
+                    android:layout_height="1px" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="120px"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3px"
+                        android:text="气候类型"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="@color/menuColor"
+                        android:textSize="@dimen/NormalTextSize" />
+
+                    <com.bingchong.widget.LineView
+                        android:layout_width="1px"
+                        android:layout_height="fill_parent" />
+
+                    <EditText
+                        android:id="@+id/edt_place_info6"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:inputType="textPersonName"
+                        android:paddingLeft="15px"
+                        android:textColor="@color/menuColor"
+                        android:textSize="@dimen/NormalTextSize" />
+                </LinearLayout>
+
+                <com.bingchong.widget.LineView
+                    android:layout_width="wrap_content"
+                    android:layout_height="1px" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <com.bingchong.widget.LineView
+            android:layout_width="1px"
+            android:layout_height="fill_parent" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15px"
+        android:layout_marginTop="15px"
+        android:background="@drawable/item_rect_normal"
+        android:orientation="vertical" >
+        
+                    <TextView
+                        android:layout_width="120px"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3px"
+                        android:text="备注信息"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="@color/menuColor"
+                        android:textSize="@dimen/NormalTextSize" />   
+
+                    <EditText
+                        android:id="@+id/edt_place_note"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_margin="1px"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:paddingLeft="15px"
+                        android:textColor="@color/menuColor"
+                        android:textSize="@dimen/NormalTextSize" />
+                             
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10px"
+                        android:background="@drawable/item_rect" >
+
+                        <TextView
+                            android:id="@+id/txtPhoto"
+                            android:layout_width="180px"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="3px"
+                            android:text="测报点实景照片"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:textColor="@color/menuColor"
+                            android:textSize="@dimen/NormalTextSize" />
+
+                        <ImageView
+                            android:id="@+id/btnPhoto"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="false"
+                            android:layout_below="@id/txtPhoto"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10px"
+                            android:layout_marginTop="10px"
+                            android:src="@drawable/photo" />
+
+                        <ImageView
+                            android:id="@+id/imagePhoto"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_below="@id/txtPhoto"
+                            android:layout_centerInParent="true" />
+
+                    </RelativeLayout>
+                      
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/btnSave"
+            style="@style/main_btn"
+            android:layout_width="300px"
+            android:layout_height="50px"
+            android:layout_margin="10px"
+            android:text="提交审核"
+            android:textColor="@color/menuTxtColor"
+            android:textSize="25px" />
+
+    </LinearLayout>
+
+     </LinearLayout>   
+    </ScrollView>    
+
+</LinearLayout>

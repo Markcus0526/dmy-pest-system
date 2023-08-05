@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/rlTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/TitleBarSize"
+        android:background="@color/menuColor"
+        android:orientation="horizontal" >
+
+        <ImageButton
+                android:layout_width="70px"
+                android:layout_height="match_parent"
+                android:id="@+id/btn_back" android:background="@null" android:scaleType="centerInside"
+                android:src="@drawable/btn_back" android:padding="15px"/>
+
+        <TextView
+            android:id="@+id/txtTitle"
+            style="@style/TopText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|right|center_horizontal"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="虫害"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <Button
+            android:id="@+id/btnReport"
+            android:layout_width="90px"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginRight="15px"
+            android:background="@drawable/btn_top"
+            android:text="上报"
+            android:textColor="@color/menuTxtColor" android:textSize="@dimen/MenuTextSize"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="15px"
+        android:layout_weight="1"
+        android:orientation="vertical" android:id="@+id/rlContent" android:layout_below="@+id/rlTitle">
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical" android:id="@+id/scroll_linear">
+
+                <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent">
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="选择测报点类型"
+                            android:id="@+id/textView5" android:gravity="center"
+                            android:textSize="@dimen/MenuTextSize" android:textColor="@color/menuColor"/>
+                    <Spinner style="@style/Spinner" android:id="@+id/spinnerPointType" android:layout_width="fill_parent"
+                             android:layout_height="50px" android:background="@color/menuColor"
+                             android:paddingLeft="15px" android:textSize="@dimen/NormalTextSize"
+                             android:layout_marginLeft="10px"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" android:layout_marginTop="10px">
+
+                    <Spinner
+                        android:id="@+id/spinnerPlace"
+                        style="@style/Spinner"
+                        android:layout_width="fill_parent"
+                        android:layout_height="50px"
+                        android:background="@drawable/item_rect"
+                        android:paddingLeft="15px"
+                        android:textSize="@dimen/NormalTextSize" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10px" >
+
+                    <TextView
+                        android:id="@+id/textView1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="10px"
+                        android:text="表:"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="@color/menuColor"
+                        android:textSize="@dimen/MenuTextSize" />
+
+                    <Spinner
+                        android:id="@+id/spinnerTable"
+                        style="@style/Spinner"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:background="@color/menuTxtColor"
+                        android:textSize="@dimen/NormalTextSize" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10px" >
+
+                    <RadioGroup
+                        android:id="@+id/main_radio_group"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <com.bingchong.widget.BRadioButton
+                            android:id="@+id/btnTable"
+                            style="@style/main_tab"
+                            android:layout_height="45px"
+                            android:checked="true"
+                            android:text="测报表格"
+                            android:textColor="@color/menuColor"
+                            android:textSize="@dimen/MenuTextSize" />
+
+                        <com.bingchong.widget.BRadioButton
+                            android:id="@+id/btnInfo"
+                            style="@style/main_tab"
+                            android:layout_height="45px"
+                            android:text="病虫基本信息"
+                            android:textColor="@color/menuColor" android:textSize="@dimen/MenuTextSize"/>
+                    </RadioGroup>
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1" >
+
+                    <include layout="@layout/report_blight_info" />
+
+                    <include layout="@layout/report_blight_table" />
+                </RelativeLayout>
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+</RelativeLayout>

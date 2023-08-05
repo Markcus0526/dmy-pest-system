@@ -1,0 +1,234 @@
+﻿
+.board {
+background: url("../img/bg_repno.gif") no-repeat scroll 0 0 transparent;
+padding-left: 55px;
+}    
+
+.line{
+*width:100%;
+height:2px;
+margin:10px 0;
+font-size:0;
+overflow:hidden;
+background-color:transparent;
+border-width:0;
+border-top:1px solid #e8e8e8
+}
+.line-dashed{
+border-style:dashed;
+background:transparent
+}
+
+.btn - primary {
+	color :  # fff!important;
+	background - color :  # 65bd77;
+	border - color :  # 65bd77
+}
+
+.panel {
+	border - radius : 2px
+}
+.panel.panel - default{
+	border - color :  # e8e8e8
+}
+.panel.panel - default > .panel - heading, .panel.panel - default > .panel - footer {
+	border - color :  # e8e8e8
+}
+
+
+@ media(min - width : 768px) {
+	body.container {
+		-webkit - box - shadow : 0 3px 60px rgba(0, 0, 0, 0.3);
+		box - shadow : 0 3px 60px rgba(0, 0, 0, 0.3);
+		border - left : 1px solid # cfcfcf;
+		border - right : 1px solid # cfcfcf
+	}
+	.app,
+	.app body {
+		width : 100 % ;
+		height : 100 % ;
+		overflow : hidden
+	}
+	.app.hbox.stretch {
+		height : 100 %
+	}
+	.app.vbox > section,
+	.app.vbox > footer {
+		position : absolute
+	}
+	.app.vbox.flex > section > section {
+		overflow : auto
+	}
+	.hbox {
+		display : table;
+		table - layout : fixed;
+		border - spacing : 0;
+		width : 100 %
+	}
+	.hbox > aside,
+	.hbox > section {
+		display : table - cell;
+		vertical - align : top;
+		height : 100 % ;
+		padding : 0;
+		float : none
+	}
+	.hbox > aside.show,
+	.hbox > section.show,
+	.hbox > aside.hidden - sm,
+	.hbox > section.hidden - sm {
+		display : table - cell!important
+	}
+	.vbox {
+		border - spacing : 0;
+		position : relative;
+		height : 100 % ;
+		width : 100 %
+	}
+	.vbox > section,
+	.vbox > footer {
+		top : 0;
+		bottom : 0;
+		width : 100 %
+	}
+	.vbox > header~section {
+		top : 50px
+	}
+	.vbox > section.w - f {
+		bottom : 50px
+	}
+	.vbox > footer {
+		top : auto;
+		z - index : 1000
+	}
+	.vbox > footer~section {
+		bottom : 50px
+	}
+	.vbox.flex > header,
+	.vbox.flex > section,
+	.vbox.flex > footer {
+		position : inherit
+	}
+	.vbox.flex > section {
+		display : table - row;
+		height : 100 %
+	}
+	.vbox.flex > section > section {
+		position : relative;
+		height : 100 % ;
+		-webkit - overflow - scrolling : touch
+	}
+	.ie.vbox.flex > section > section {
+		display : table - cell
+	}
+	.vbox.flex > section > section > section {
+		position : absolute;
+		top : 0;
+		bottom : 0;
+		left : 0;
+		right : 0
+	}
+	.aside - xs {
+		width : 48px
+	}
+	.aside {
+		width : 180px
+	}
+	.aside - sm {
+		width : 150px
+	}
+	.aside - md {
+		width : 220px
+	}
+	.aside - lg {
+		width : 250px
+	}
+	.aside - xl {
+		width : 300px
+	}
+	.aside - xxl {
+		width : 450px
+	}
+	.scrollable {
+		-webkit - overflow - scrolling : touch
+	}
+	::-webkit - scrollbar {
+		width : 7px;
+		height : 7px
+	}
+	::-webkit - scrollbar - thumb {
+		background - color : rgba(50, 50, 50, 0.3)
+	}
+	::-webkit - scrollbar - thumb : hover {
+		background - color : rgba(50, 50, 50, 0.6)
+	}
+	::-webkit - scrollbar - track {
+		background - color : rgba(50, 50, 50, 0.1)
+	}
+	::-webkit - scrollbar - track : hover {
+		background - color : rgba(50, 50, 50, 0.2)
+	}
+}
+
+.wrapper {
+	padding : 15px
+}
+
+.dropdown - menu {
+	font - size : 13px;
+	border - radius : 2px;
+	-webkit - box - shadow : 0 2px 6px rgba(0, 0, 0, 0.1);
+	box - shadow : 0 2px 6px rgba(0, 0, 0, 0.1);
+	border : 1px solid # ddd;
+	border : 1px solid rgba(0, 0, 0, 0.1)
+}
+.dropdown - menu.pull - left {
+	left : 100 %
+}
+.dropdown - menu > .panel {
+	border : none;
+	margin : -5px 0
+}
+.dropdown - menu > li > a {
+	padding : 5px 15px
+}
+.dropdown - menu > li > a : hover, .dropdown - menu > li > a : focus, .dropdown - menu > .active > a, .dropdown - menu > .active > a : hover, .dropdown - menu > .active > a : focus {
+	background - image : none;
+	filter : none;
+	background - color :  # f1f1f1!important;
+	color :  # 717171
+}
+.dropdown - header {
+	padding : 5px 15px
+}
+.dropdown - submenu {
+	position : relative
+}
+.dropdown - submenu : hover > a, .dropdown - submenu : focus > a {
+	background - color :  # f1f1f1!important;
+	color :  # 717171
+}
+.dropdown - submenu : hover > .dropdown - menu, .dropdown - submenu : focus > .dropdown - menu {
+	display : block
+}
+.dropdown - submenu.pull - left {
+	float : none!important
+}
+.dropdown - submenu.pull - left > .dropdown - menu {
+	left : -100 % ;
+	margin - left : 10px
+}
+.dropdown - submenu.dropdown - menu {
+	left : 100 % ;
+	top : 0;
+	margin - top : -6px;
+	margin - left : -1px
+}
+.dropup.dropdown - submenu > .dropdown - menu {
+	top : auto;
+	bottom : 0
+}
+.dropdown - select > li > a input {
+	position : absolute;
+	left : -9999em
+}

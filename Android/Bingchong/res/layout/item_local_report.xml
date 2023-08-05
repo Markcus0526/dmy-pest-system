@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background" android:layout_margin="1px">
+
+        <com.bingchong.widget.BButton
+            android:id="@+id/btn_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/btn_menu"
+            android:text="Button "
+            android:textColor="@color/menuColor"
+            android:textSize="@dimen/NormalTextSize" android:paddingLeft="70px" android:paddingRight="10px"/>
+        <CheckBox
+                android:layout_width="70px"
+                android:layout_height="wrap_content"
+                android:id="@+id/check_report" android:layout_alignBottom="@+id/btn_name"
+                android:layout_alignTop="@+id/btn_name"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

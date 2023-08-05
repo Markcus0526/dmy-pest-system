@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainLayout"
+    android:layout_width="70px"
+    android:layout_height="70px"
+    android:gravity="left"
+    android:orientation="vertical" >
+    
+    <TextView
+        android:id="@+id/menu_back"
+        style="@style/TopText"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="&lt;"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+ </LinearLayout>

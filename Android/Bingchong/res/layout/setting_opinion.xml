@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background">
+
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/TitleBarSize" android:id="@+id/title_layout" android:background="@color/menuColor">
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="意见反馈"
+                android:id="@+id/txt_title" android:gravity="center" android:textColor="#FFFFFF"
+                android:textSize="@dimen/TitleTextSize"/>
+        <ImageButton android:layout_width="70px" android:layout_height="match_parent" android:id="@+id/btn_back"
+                     android:background="@null" android:scaleType="centerInside" android:src="@drawable/btn_back"
+                     android:padding="15px"/>
+    </RelativeLayout>
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" android:id="@+id/content_layout"
+            android:layout_below="@+id/title_layout">
+        <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/main_scroll">
+            <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent" android:id="@+id/scroll_content_layout"
+                    android:paddingBottom="20px">
+                <ImageButton
+                        android:layout_width="60px"
+                        android:layout_height="50px"
+                        android:id="@+id/btn_radio_type" android:layout_marginTop="40px" android:layout_marginLeft="20px"
+                        android:background="@null" android:scaleType="centerInside"
+                        android:src="@drawable/bk_radio_sel" android:padding="12px"/>
+                <TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="功能分类："
+						android:id="@+id/lbl_type" android:textColor="@color/menuColor" android:textSize="22px"
+                        android:gravity="center"
+                        android:layout_toRightOf="@+id/btn_radio_type" android:layout_marginLeft="20px"
+                        android:layout_alignTop="@+id/btn_radio_type" android:layout_alignBottom="@+id/btn_radio_type"/>
+                <RelativeLayout
+						android:layout_width="220px"
+						android:layout_height="fill_parent" android:id="@+id/type_layout"
+						android:layout_toRightOf="@+id/lbl_type" android:layout_alignTop="@+id/lbl_type"
+						android:layout_alignBottom="@+id/lbl_type" android:layout_marginLeft="20px"
+						android:background="@drawable/rect_white_menucolor">
+					<TextView
+							android:layout_width="match_parent"
+							android:layout_height="match_parent"
+							android:id="@+id/txt_type" android:gravity="center" android:textColor="@color/menuColor"
+							android:textSize="22px"/>
+					<ImageButton
+							android:layout_width="match_parent"
+							android:layout_height="match_parent"
+							android:id="@+id/btn_type" android:background="@drawable/btn_empty"/>
+				</RelativeLayout>
+                <ImageButton
+                        android:layout_width="60px"
+                        android:layout_height="50px"
+                        android:id="@+id/btn_radio_other" android:layout_below="@+id/btn_radio_type"
+                        android:layout_alignLeft="@+id/btn_radio_type" android:layout_marginTop="30px"
+                        android:background="@null" android:scaleType="centerInside"
+                        android:src="@drawable/bk_radio_normal" android:padding="12px"/>
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="其他："
+                        android:id="@+id/txt_type_other" android:layout_alignTop="@+id/btn_radio_other"
+                        android:layout_alignBottom="@+id/btn_radio_other" android:gravity="center"
+                        android:textColor="@color/menuColor" android:textSize="22px"
+                        android:layout_alignLeft="@+id/lbl_type"/>
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="问题或意见描述："
+                        android:id="@+id/lbl_contents" android:layout_below="@+id/btn_radio_other"
+                        android:layout_marginLeft="30px" android:layout_marginTop="40px"
+                        android:textColor="@color/menuColor" android:textSize="22px"/>
+                <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/edt_type_other" android:layout_alignLeft="@+id/type_layout"
+                        android:layout_alignTop="@+id/txt_type_other" android:layout_alignBottom="@+id/txt_type_other"
+                        android:layout_alignRight="@+id/type_layout"
+                        android:background="@drawable/rect_white_menucolor" android:paddingLeft="10px"
+                        android:paddingRight="10px" android:textColor="#000000" android:textSize="22px"/>
+                <EditText
+                        android:layout_width="420px"
+                        android:layout_height="310px"
+                        android:id="@+id/edt_content" android:layout_below="@+id/lbl_contents"
+                        android:layout_centerHorizontal="true" android:layout_marginTop="20px"
+                        android:background="@drawable/rect_white_menucolor" android:textSize="22px"
+                        android:textColor="#000000" android:singleLine="false"
+                        android:gravity="top|left" android:padding="10px"/>
+                <Button
+                        android:layout_width="180px"
+                        android:layout_height="50px"
+                        android:text="提交"
+                        android:id="@+id/btn_confirm" android:background="@color/menuColor"
+                        android:textColor="#FFFFFF" android:textSize="22px" android:layout_centerHorizontal="true"
+                        android:layout_below="@+id/edt_content" android:layout_marginTop="40px"/>
+            </RelativeLayout>
+        </ScrollView>
+    </RelativeLayout>
+</RelativeLayout>
